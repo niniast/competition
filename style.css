@@ -1,0 +1,216 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b2a6f;
+    font-family: sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+.header {
+    padding-top: 20px;
+}
+
+/* TOP BAR */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px;
+}
+.divider {
+    width: 1px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.header-text {
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* RIGHT SIDE */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* SOCIALS */
+.socials {
+    display: flex;
+    gap: 10px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* LANGUAGE */
+.lang {
+    color: white;
+    font-size: 14px;
+}
+
+.lang .active {
+    color: #4fc3ff;
+}
+
+/* NAVIGATION */
+.nav {
+    margin: 20px auto 0; /* ეს ასწორებს ცენტრში */
+    display: flex;
+    justify-content: space-between; /* Figma-ში space-between არის */
+    align-items: center;
+
+    width: 996px;
+    height: 57px;
+
+    padding: 0 60px; /* ეს ძალიან მნიშვნელოვანია */
+    border-radius: 16px; /* Figma-ში 16px გაქვს */
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+/* ACTIVE BUTTON */
+.nav a.active {
+    background: #2f6bff;
+}
+
+/* HOVER */
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.main-title {
+    width: 656px;
+    height: 36px;
+
+    margin: 40px auto 0; /* ცენტრში დასმა */
+
+    font-family: "FiraGO", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+
+    text-align: center;
+    color: #ffffff;
+}
+.cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* COMMON CARD */
+.card {
+    background: #f5f7fb;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* LEFT */
+.card-left {
+    width: 630px;
+    height: 309px;
+}
+
+/* RIGHT */
+.card-right {
+    width: 517px;
+    height: 311px;
+}
+
+/* SEARCH */
+.search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+}
+
+/* TAGS */
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tags span {
+    background: #cfeeff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* RIGHT CARD */
+.card-title {
+    color: #0b2a6f;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background: #cfeeff;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: #e0e6ef;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
