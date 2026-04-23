@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="ka">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,10 +23,10 @@
                 <!-- RIGHT: SOCIAL + LANG -->
                 <div class="header-right">
                     <div class="socials">
-                        <a href="#">in</a>
-                        <a href="#">f</a>
-                        <a href="#">▶</a>
-                        <a href="#">x</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                        <a href="#" aria-label="X (Twitter)">x</a>
                     </div>
 
                     <div class="lang">
@@ -47,43 +47,57 @@
             </nav>
         </header>
 
-        <h1 class="main-title">კონკურენციის და მომხმარებლის ჰაბი</h1>
-        <section class="cards">
-            <!-- LEFT CARD -->
-            <div class="card card-left">
-                <div class="search">
-                    <span class="icon"
-                        ><img src="pictures/mingcute_search-line.png" alt=""
-                    /></span>
-                    <input type="text" placeholder="რა გაინტერესებს?" />
-                </div>
+        <main>
+            <h1 class="main-title">კონკურენციის და მომხმარებლის ჰაბი</h1>
+            <section class="cards">
+                <!-- LEFT CARD -->
+                <div class="card card-left">
+                    <div class="search">
+                        <span class="icon">
+                            <img src="pictures/mingcute_search-line.png" alt="" />
+                        </span>
+                        <label for="search-input" class="visually-hidden" style="display:none;">ძებნა</label>
+                        <input type="text" id="search-input" placeholder="რა გაინტერესებს?" />
+                    </div>
 
-                <div class="tags">
-                    <p class="tags-label">მაგალითად:</p>
-                    <span>მონოპოლია</span>
-                    <span>კარტელი</span>
-                    <span>გარემოს დაცვა</span>
+                    <div class="tags">
+                        <p class="tags-label">მაგალითად:</p>
+                        <span>მონოპოლია</span>
+                        <span>კარტელი</span>
+                        <span>გარემოს დაცვა</span>
+                    </div>
+                    <div class="icons">
+                        <button type="button" title="შენახვა" style="background:none; border:none; padding:0; cursor:pointer;">
+                            <img src="pictures/Vector.png" alt="შენახვა" />
+                        </button>
+                        <button type="button" title="გაზიარება" style="background:none; border:none; padding:0; cursor:pointer;">
+                            <img src="pictures/Vector1.png" alt="გაზიარება" />
+                        </button>
+                        <button type="button" title="კოპირება" style="background:none; border:none; padding:0; cursor:pointer;">
+                            <img src="pictures/Vector2.png" alt="კოპირება" />
+                        </button>
+                    </div>
                 </div>
-                <div class="icons">
-                    <img src="pictures/Vector.png" alt="bookmark" />
-                    <img src="pictures/Vector1.png" alt="share" />
-                    <img src="pictures/Vector2.png" alt="copy" />
-                </div>
+               
             </div>
 
-            <!-- RIGHT CARD -->
-            <div class="card card-right">
-                <h3 class="card-title">// დღის სიტყვა</h3>
+                <!-- RIGHT CARD -->
+                <div class="card card-right">
+                    <h3 class="card-title">
+                        <span class="slashes"> </span>
+                        დღის სიტყვა
+                    </h3>
 
-                <div class="highlight">კონკურენცია</div>
+                    <div class="highlight">კონკურენცია</div>
 
-                <p class="card-text">
-                    ბაზარზე კომპანიების ერთმანეთთან ბრძოლა უკეთესი ფასისა და
-                    ხარისხისთვის.
-                </p>
-
-                <button class="btn">ლექსიკონი</button>
-            </div>
-        </section>
+                    <p class="card-text">
+                        ბაზარზე კომპანიების ერთმანეთთან ბრძოლა უკეთესი ფასისა და
+                        ხარისხისთვის.
+                    </p>
+                        <p class="more">ვრცლად:</p>
+                    <button class="btn">ლექსიკონი</button>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

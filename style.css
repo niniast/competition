@@ -10,6 +10,19 @@ body {
     font-family: sans-serif;
 }
 
+/* UTILITIES */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* CONTAINER */
 .container {
     max-width: 1200px;
@@ -89,16 +102,14 @@ body {
     display: flex;
     justify-content: center; /* შეცვალე */
     align-items: center;
+    flex-wrap: wrap;
 
-    width: 996px;
-    height: 57px;
-
-    padding: 0 60px;
+    max-width: 996px;
+    min-height: 57px;
+    padding: 10px 20px;
     border-radius: 16px;
-
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.26);
-
     gap: 10px; /* ეს დაამატე */
 }
 
@@ -121,11 +132,9 @@ body {
 }
 
 .main-title {
-    width: 656px;
-    height: 36px;
-
+    max-width: 656px;
+    width: 90%;
     margin: 40px auto 0; /* ცენტრში დასმა */
-
     font-family: "FiraGO", sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -153,34 +162,37 @@ body {
 .card-left {
     width: 630px;
     height: 309px;
+
     display: flex;
     flex-direction: column;
-    align-items: center; /* ეს დააცენტრებს search-ს */
+    align-items: center;
 }
 
 /* RIGHT */
 .card-right {
     width: 517px;
     height: 311px;
-}
 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 /* SEARCH */
 .search {
+    width: 496px;
+    height: 61px;
+
     display: flex;
     align-items: center;
-    width: 496px;
 
-    height: 61px; /* Figma-ში ~61px */
     padding: 0 20px;
-
     background: #ffffff;
     border-radius: 30px;
 
-    box-shadow: 0 1px 12px rgba(64, 113, 255, 0.3); /* Figma shadow */
+    box-shadow: 0 1px 12px rgba(64, 113, 255, 0.3);
 
     margin-bottom: 20px;
 }
-
 .search input {
     border: none;
     outline: none;
@@ -199,10 +211,8 @@ body {
 /* TAGS */
 .tags {
     display: flex;
-    justify-content: center;
     gap: 10px;
-    font-size: 14px; /* ერთიანი ზომა */
-    width: 507px;
+    margin-top: 10px;
 }
 
 .tags span {
@@ -212,17 +222,24 @@ body {
     font-size: 12px;
 }
 .icons {
+    margin-top: auto;
+
     display: flex;
-    justify-content: center; /* შუაში */
-
-    gap: 25px; /* Figma-ში Gap = 25px */
-
-    margin-top: 120px;
+    justify-content: center;
+    gap: 25px;
 }
-.icons img {
+
+.icons button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.icons img,
+.icons button img {
     width: 24px;
     height: 24px;
-    cursor: pointer;
     opacity: 0.8;
     transition: 0.2s;
 }
@@ -234,26 +251,56 @@ body {
 
 /* RIGHT CARD */
 .card-title {
-    color: #0b2a6f;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-family: "FiraGO", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: #223c6e;
+}
+.slashes {
+    display: flex;
+    gap: 4px; /* ხაზებს შორის დაშორება */
+    align-items: center;
+    transform: translateY(2px);
 }
 
+.slashes::before,
+.slashes::after {
+    content: "";
+    width: 7px;
+    height: 31px;
+    background: #00b8e1;
+    transform: rotate(29deg);
+    display: block;
+}
 .highlight {
-    background: #cfeeff;
-    display: inline-block;
-    padding: 6px 12px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    width: 325px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 184, 225, 0.2);
+    border-radius: 8px;
+
+    margin: 12px 0;
 }
 
 .card-text {
+    width: 436px;
     font-size: 14px;
     margin-bottom: 15px;
 }
-
 .btn {
+    width: 145px;
+    height: 35px;
+
     background: #e0e6ef;
     border: none;
-    padding: 8px 16px;
     border-radius: 20px;
 }
