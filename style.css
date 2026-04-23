@@ -85,19 +85,21 @@ body {
 
 /* NAVIGATION */
 .nav {
-    margin: 20px auto 0; /* ეს ასწორებს ცენტრში */
+    margin: 20px auto 0;
     display: flex;
-    justify-content: space-between; /* Figma-ში space-between არის */
+    justify-content: center; /* შეცვალე */
     align-items: center;
 
     width: 996px;
     height: 57px;
 
-    padding: 0 60px; /* ეს ძალიან მნიშვნელოვანია */
-    border-radius: 16px; /* Figma-ში 16px გაქვს */
+    padding: 0 60px;
+    border-radius: 16px;
 
     background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+
+    gap: 10px; /* ეს დაამატე */
 }
 
 .nav a {
@@ -151,6 +153,9 @@ body {
 .card-left {
     width: 630px;
     height: 309px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ეს დააცენტრებს search-ს */
 }
 
 /* RIGHT */
@@ -163,23 +168,41 @@ body {
 .search {
     display: flex;
     align-items: center;
-    background: #fff;
-    border-radius: 20px;
-    padding: 10px 15px;
+    width: 496px;
+
+    height: 61px; /* Figma-ში ~61px */
+    padding: 0 20px;
+
+    background: #ffffff;
+    border-radius: 30px;
+
+    box-shadow: 0 1px 12px rgba(64, 113, 255, 0.3); /* Figma shadow */
+
     margin-bottom: 20px;
 }
 
 .search input {
     border: none;
     outline: none;
-    margin-left: 10px;
+    margin-left: 12px;
     width: 100%;
+
+    font-size: 14px;
+    color: #0b2a6f;
+}
+
+.search img {
+    width: 28px;
+    height: 28px;
 }
 
 /* TAGS */
 .tags {
     display: flex;
+    justify-content: center;
     gap: 10px;
+    font-size: 14px; /* ერთიანი ზომა */
+    width: 507px;
 }
 
 .tags span {
@@ -187,6 +210,26 @@ body {
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 12px;
+}
+.icons {
+    display: flex;
+    justify-content: center; /* შუაში */
+
+    gap: 25px; /* Figma-ში Gap = 25px */
+
+    margin-top: 120px;
+}
+.icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.icons img:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 /* RIGHT CARD */
