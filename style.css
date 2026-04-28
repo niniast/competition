@@ -326,3 +326,58 @@ body {
     margin: 40px auto;
     max-width: 643px;
 }
+.frame267 {
+    width: 996px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-title {
+    font-size: 16px;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.question-title::before,
+.question-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.question-title::before {
+    left: -220px;
+}
+
+.question-title::after {
+    right: -220px;
+}
+
+.options {
+    display: flex;
+    gap: 27px;
+}
+
+.option {
+    width: 300px; /* დაახლოებით ფიგმას მიხედვით */
+    height: 95px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
