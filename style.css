@@ -7,7 +7,22 @@
 
 body {
     background: #0b2a6f;
-    font-family: sans-serif;
+    font-family: "FiraGO", sans-serif;
+}
+@font-face {
+    font-family: "FiraGO";
+    src: url("assets/fonts/FiraGO-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FiraGO";
+    src: url("assets/fonts/FiraGO-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* UTILITIES */
@@ -44,6 +59,8 @@ body {
 
 /* LEFT SIDE */
 .header-left {
+    width: 329px;
+    height: 85px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -74,6 +91,8 @@ body {
 /* SOCIALS */
 .socials {
     display: flex;
+    width: 163px;
+    height: 40px;
     gap: 10px;
     padding: 8px 14px;
     border-radius: 20px;
@@ -81,9 +100,17 @@ body {
 }
 
 .socials a {
+    display: inline-flex; /* 🔥 */
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+
     color: white;
     text-decoration: none;
-    font-size: 14px;
 }
 
 /* LANGUAGE */
@@ -327,12 +354,16 @@ body {
     max-width: 643px;
 }
 .frame267 {
-    width: 996px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    max-width: 996px;
+    width: 100%;
 
+    margin: 0 auto; /* 🔥 ცენტრში დასმა */
+
+    display: flex;
+    flex-direction: column; /* 🔥 ზემოთ ტექსტი, ქვემოთ ბლოკები */
+    align-items: center;
+    gap: 25px;
+}
 .question-title {
     font-size: 16px;
     color: white;
@@ -345,34 +376,38 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    width: 200px;
+    width: 150px;
     height: 1px;
     background: rgba(255, 255, 255, 0.5);
 }
 
 .question-title::before {
-    left: -220px;
+    right: 100%;
+    margin-right: 20px;
 }
 
 .question-title::after {
-    right: -220px;
+    left: 100%;
+    margin-left: 20px;
 }
 
 .options {
     display: flex;
-    gap: 27px;
+    gap: 114px;
 }
 
 .option {
-    width: 300px; /* დაახლოებით ფიგმას მიხედვით */
+    width: 256px;
     height: 95px;
+
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.2);
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
+
     color: white;
     cursor: pointer;
     transition: 0.3s;
