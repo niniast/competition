@@ -1,4 +1,4 @@
-/* RESET */
+/*--- RESET--- */
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ body {
     font-display: swap;
 }
 
-/* UTILITIES */
+/*--- UTILITIES--- */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -38,26 +38,24 @@ body {
     border: 0;
 }
 
-/* CONTAINER */
+/* ---CONTAINER ---*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* HEADER */
+/* ---HEADER--- */
 .header {
     padding-top: 20px;
 }
 
-/* TOP BAR */
 .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* LEFT SIDE */
 .header-left {
     width: 329px;
     height: 85px;
@@ -69,6 +67,7 @@ body {
 .logo {
     width: 50px;
 }
+
 .divider {
     width: 1px;
     height: 50px;
@@ -81,14 +80,12 @@ body {
     line-height: 1.4;
 }
 
-/* RIGHT SIDE */
 .header-right {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/* SOCIALS */
 .socials {
     display: flex;
     width: 163px;
@@ -100,20 +97,16 @@ body {
 }
 
 .socials a {
-    display: inline-flex; /* 🔥 */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-
     width: 24px;
     height: 24px;
-
     border-radius: 50%;
-
     color: white;
     text-decoration: none;
 }
 
-/* LANGUAGE */
 .lang {
     color: white;
     font-size: 14px;
@@ -127,24 +120,18 @@ body {
     color: #4fc3ff;
 }
 
-/* NAVIGATION */
+/*--- NAVIGATION ---*/
 .nav {
     margin: 20px auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
     max-width: 996px;
     height: 57px;
-
     padding: 10px 60px;
-
     border-radius: 16px;
-
-    background: rgba(11, 44, 139, 0.7); /* 🔥 */
-
+    background: rgba(11, 44, 139, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.26);
-
     box-shadow:
         inset 0 4px 12px rgba(21, 101, 255, 0.5),
         0 7px 14px rgba(0, 125, 195, 0.15);
@@ -158,29 +145,28 @@ body {
     transition: 0.3s;
     font-weight: 400;
 }
-
-/* ACTIVE BUTTON */
+/*შეადარე ფიგმას
 .nav a.active {
     background: #2f6bff;
 }
 
-/* HOVER */
 .nav a:hover {
     background: rgba(255, 255, 255, 0.2);
-}
+}*/
 
 .main-title {
     max-width: 656px;
     width: 90%;
-    margin: 40px auto 0; /* ცენტრში დასმა */
+    margin: 40px auto 0;
     font-family: "FiraGO", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
-
     text-align: center;
     color: #ffffff;
 }
+
+/*--- CARDS ---*/
 .cards {
     margin-top: 40px;
     display: flex;
@@ -188,81 +174,65 @@ body {
     gap: 30px;
 }
 
-/* COMMON CARD */
 .card {
     background: #f5f7fb;
     border-radius: 16px;
     padding: 20px;
-
     border: 7px solid transparent;
-
     background-image:
         linear-gradient(#f5f7fb, #f5f7fb),
         linear-gradient(180deg, #93aee4 0%, #e6eeff 100%);
-
     background-origin: border-box;
     background-clip: padding-box, border-box;
-
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
-/* LEFT */
+
+/*left card*/
 .card-left {
     width: 630px;
     height: 309px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-/* RIGHT */
 .card-right {
     position: relative;
     width: 517px;
     height: 311px;
-
     display: flex;
     flex-direction: column;
-
-    padding-left: 18px;
+    padding: 20px 18px;
 }
 
 .card-right::after {
     content: "";
-
     position: absolute;
-
     top: 35px;
     right: 20px;
-
     width: 260px;
     height: 1px;
-
     background: #e3ebf5;
 }
-/* SEARCH */
+
 .search {
     width: 496px;
     height: 61px;
-
     display: flex;
     align-items: center;
-
     padding: 0 20px;
     background: #ffffff;
     border-radius: 16px;
-
     box-shadow: 0 1px 12px rgba(64, 113, 255, 0.3);
-
     margin-bottom: 20px;
 }
+
 .search input {
     border: none;
     outline: none;
     margin-left: 12px;
     width: 100%;
-
     font-size: 14px;
     color: #0b2a6f;
 }
@@ -271,6 +241,7 @@ body {
     width: 28px;
     height: 28px;
 }
+
 .icon {
     position: relative;
     padding-right: 15px;
@@ -286,19 +257,19 @@ body {
     height: 60px;
     background: #e3ebf5;
 }
+
 .search input::placeholder {
     color: #02103a;
 }
 
-/* TAGS */
 .tags {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* 🔥 მთავარი */
-
+    justify-content: space-between;
     width: 100%;
-    max-width: 507px; /* ფიგმიდან */
+    max-width: 507px;
 }
+
 .tags-list {
     display: flex;
     gap: 10px;
@@ -317,14 +288,14 @@ body {
 }
 
 .divider-line {
-    width: 260px; /* ფიგმაში რაც გაქვს */
+    width: 260px;
     height: 1px;
     background: #e3ebf5;
-    margin: 20px auto; /* ცენტრში */
+    margin: 20px auto;
 }
+
 .icons {
     margin-top: auto;
-
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -345,10 +316,10 @@ body {
     transition: 0.2s;
 }
 
-.icons img:hover {
+/*შეადარე ფიგმას.icons img:hover {
     opacity: 1;
     transform: scale(1.1);
-}
+}*/
 
 /* RIGHT CARD */
 .card-title {
@@ -356,16 +327,15 @@ body {
     display: flex;
     align-items: center;
     gap: 27px;
-
     font-family: "FiraGO", sans-serif;
     font-weight: 500;
     font-size: 18px;
-
     color: #223c6e;
 }
+
 .slashes {
     display: flex;
-    gap: 4px; /* ხაზებს შორის დაშორება */
+    gap: 4px;
     align-items: center;
     transform: translateY(2px);
 }
@@ -379,80 +349,67 @@ body {
     transform: rotate(29deg);
     display: block;
 }
+
 .highlight {
     width: 325px;
     height: 45px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: rgba(0, 184, 225, 0.2);
     border-radius: 8px;
-
     margin-top: 12px;
     margin-bottom: 12px;
 }
 
 .card-text {
-    display: flex;
     width: 436px;
     font-size: 14px;
+    line-height: 1.6;
     margin-bottom: 15px;
-    gap: 7px;
 }
+
 .bottom-row {
     display: flex;
     align-items: center;
     gap: 10px;
-
     margin-top: 18px;
 }
 
 .more {
-    width: 74px;
-    height: 19px;
-
     font-family: "FiraGO", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
-
     color: #232323;
-
     margin: 0;
 }
 
 .btn {
     width: 145px;
     height: 35px;
-
     border: none;
     border-radius: 16px;
-
     background: rgba(64, 120, 190, 0.15);
-
     box-shadow: 0 2px 9px rgba(35, 60, 110, 0.1);
-
     font-family: "FiraGO", sans-serif;
     font-size: 14px;
-
     cursor: pointer;
 }
+
 .handwritten-text {
     font-family: "DM Giorgi Khorghuashvili", cursive;
     font-weight: 400;
     font-size: 24px;
     line-height: 100%;
     text-align: center;
-
     background: linear-gradient(90deg, #07aee6, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     margin: 40px auto;
     max-width: 643px;
 }
+
 .frame267 {
     max-width: 996px;
     width: 100%;
@@ -463,6 +420,71 @@ body {
     flex-direction: column; /* 🔥 ზემოთ ტექსტი, ქვემოთ ბლოკები */
     align-items: center;
     gap: 25px;
+}
+.blue-section {
+    position: relative;
+
+    overflow: hidden;
+
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    background-image: url("assets/pictures/gradient1.png");
+
+    background-size: cover;
+
+    background-position: center top;
+
+    background-repeat: no-repeat;
+}
+.blue-section::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 380px; /* ადრე დიდი იყო */
+
+    background-image: url("assets/pictures/gradient2.png");
+
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+}
+.handwritten-text,
+.frame267 {
+    position: relative;
+    z-index: 2;
+}
+.subscribe-btn {
+    position: absolute;
+
+    top: 428px;
+    right: 0;
+
+    width: 120px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 16px 0 0 16px;
+
+    background: red;
+
+    color: #ffffff;
+
+    font-family: "FiraGO", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    z-index: 999;
 }
 .question-title {
     font-size: 16px;
