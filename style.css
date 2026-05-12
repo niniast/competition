@@ -570,3 +570,567 @@ body {
 .option:hover {
     background: rgba(255, 255, 255, 0.35);
 }
+
+/* --- FAQ SECTION --- */
+
+.faq-section {
+    padding: 70px 0;
+
+    background: #edf4ff;
+}
+
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    margin-bottom: 55px;
+}
+
+.faq-line {
+    width: 110px;
+    height: 1px;
+
+    background: rgba(24, 53, 112, 0.2);
+}
+
+.faq-title {
+    font-family: "FiraGO", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #1c2d5a;
+}
+
+/* --- CONTENT --- */
+
+.faq-content {
+    position: relative;
+
+    max-width: 1040px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    padding: 20px 0 65px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+}
+
+/* LEFT */
+
+.faq-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    min-width: 120px;
+}
+
+.faq-label {
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #243c6e;
+}
+
+/* CENTER */
+
+.faq-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-question {
+    max-width: 560px;
+
+    margin-bottom: 38px;
+
+    text-align: center;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 15px;
+    line-height: 160%;
+
+    color: #243c6e;
+}
+
+.faq-options {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.faq-option {
+    width: 220px;
+    height: 48px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 4px 10px rgba(36, 60, 110, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    color: #243c6e;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.faq-option:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(36, 60, 110, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* CIRCLE */
+
+.faq-circle {
+    position: absolute;
+
+    right: 120px;
+    bottom: 12px;
+
+    width: 78px;
+    height: 78px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 184, 225, 0.18);
+
+    filter: blur(2px);
+}
+
+/* --- LIBRARY SECTION --- */
+
+.library-section {
+    padding: 70px 0 85px;
+
+    background: #ffffff;
+}
+
+.library-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    margin-bottom: 42px;
+}
+
+.library-line {
+    width: 110px;
+    height: 1px;
+
+    background: rgba(24, 53, 112, 0.15);
+}
+
+.library-title {
+    font-family: "FiraGO", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #1f2f5f;
+}
+
+/* --- CARDS --- */
+
+.library-cards {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    margin-bottom: 34px;
+}
+
+.library-card {
+    width: 324px;
+    height: 160px;
+}
+
+.library-image-wrap {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    box-shadow: 0 6px 18px rgba(36, 60, 110, 0.12);
+}
+
+.library-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.library-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        180deg,
+        rgba(8, 24, 58, 0.05) 0%,
+        rgba(8, 24, 58, 0.75) 100%
+    );
+}
+
+/* --- BADGES --- */
+
+.library-badge {
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+    z-index: 2;
+
+    min-width: 44px;
+    height: 20px;
+
+    padding: 0 10px;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+
+    color: #243c6e;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    backdrop-filter: blur(6px);
+}
+
+.library-badge.online {
+    color: #0091e2;
+}
+
+/* --- DATE --- */
+
+.library-date {
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    z-index: 2;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #ffffff;
+}
+
+/* --- TITLE --- */
+
+.library-card-title {
+    position: absolute;
+
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 2;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+
+    color: #ffffff;
+}
+
+/* --- BUTTON --- */
+
+.library-button {
+    width: 140px;
+    height: 40px;
+
+    display: block;
+
+    margin-left: auto;
+
+    border: none;
+    border-radius: 14px;
+
+    background: rgba(64, 120, 190, 0.12);
+
+    box-shadow: 0 4px 10px rgba(36, 60, 110, 0.08);
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #243c6e;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.library-button:hover {
+    transform: translateY(-2px);
+
+    background: rgba(64, 120, 190, 0.18);
+}
+/* --- FOOTER --- */
+
+.footer {
+    position: relative;
+
+    overflow: hidden;
+
+    padding-top: 55px;
+
+    background: linear-gradient(135deg, #10225d 0%, #16348a 50%, #1d3f9c 100%);
+
+    color: #ffffff;
+}
+
+/* ფონის ხაზები */
+
+.footer-overlay {
+    position: absolute;
+    inset: 0;
+
+    background-image: url("assets/pictures/footer-lines.png");
+
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.22;
+
+    pointer-events: none;
+}
+
+.footer-container {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 60px;
+}
+
+/* --- COLUMNS --- */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading {
+    margin-bottom: 18px;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #07aee6;
+}
+
+/* --- LINKS --- */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    list-style: none;
+}
+
+.footer-links a {
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #07aee6;
+}
+
+/* --- CENTER --- */
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 72px;
+
+    margin-bottom: 28px;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 10px 20px;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(7, 174, 230, 0.4);
+
+    margin-bottom: 26px;
+}
+
+.footer-socials a img {
+    width: 16px;
+    height: 16px;
+
+    opacity: 0.9;
+
+    transition: 0.25s ease;
+}
+
+.footer-socials a:hover img {
+    opacity: 1;
+
+    transform: translateY(-2px);
+}
+
+.footer-handwritten {
+    font-family: "DM Giorgi Khorghuashvili", cursive;
+    font-size: 22px;
+
+    background: linear-gradient(90deg, #07aee6, #ffffff);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- CONTACT --- */
+
+.footer-contact {
+    min-width: 290px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 16px;
+}
+
+.contact-item img {
+    width: 18px;
+    height: 18px;
+}
+
+.contact-item span {
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* --- FORM --- */
+
+.footer-form {
+    margin-top: 18px;
+}
+
+.footer-form input {
+    width: 100%;
+    height: 42px;
+
+    padding: 0 16px;
+
+    border: 1px solid rgba(7, 174, 230, 0.4);
+    border-radius: 10px;
+
+    background: transparent;
+
+    outline: none;
+
+    color: white;
+
+    margin-bottom: 12px;
+}
+
+.footer-form input::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.footer-form button {
+    width: 100%;
+    height: 42px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #07aee6;
+
+    color: white;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.footer-form button:hover {
+    background: #0998c8;
+}
+
+/* --- BOTTOM --- */
+
+.footer-bottom {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 45px;
+    padding: 18px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    text-align: center;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+
+    color: rgba(255, 255, 255, 0.7);
+}
