@@ -396,31 +396,8 @@ body {
     font-size: 14px;
     cursor: pointer;
 }
+/*--- BLUE SECTION ---*/
 
-.handwritten-text {
-    font-family: "DM Giorgi Khorghuashvili", cursive;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 100%;
-    text-align: center;
-    background: linear-gradient(90deg, #07aee6, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 40px auto;
-    max-width: 643px;
-}
-
-.frame267 {
-    max-width: 996px;
-    width: 100%;
-
-    margin: 0 auto; /* 🔥 ცენტრში დასმა */
-
-    display: flex;
-    flex-direction: column; /* 🔥 ზემოთ ტექსტი, ქვემოთ ბლოკები */
-    align-items: center;
-    gap: 25px;
-}
 .blue-section {
     position: relative;
 
@@ -456,6 +433,39 @@ body {
 
     pointer-events: none;
 }
+
+.handwritten-text {
+    font-family: "DM Giorgi Khorghuashvili", cursive;
+
+    font-weight: 400;
+    font-size: 24px;
+
+    line-height: 140%;
+
+    text-align: center;
+
+    background: linear-gradient(90deg, #07aee6, #ffffff);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 40px auto;
+
+    max-width: 643px;
+
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+.frame267 {
+    max-width: 996px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    position: relative;
+    z-index: 2;
+}
 .handwritten-text,
 .frame267 {
     position: relative;
@@ -464,8 +474,8 @@ body {
 .subscribe-btn {
     position: absolute;
 
-    top: 428px;
-    right: 0;
+    top: 60px;
+    right: -12px;
 
     width: 120px;
     height: 40px;
@@ -474,7 +484,9 @@ body {
 
     border-radius: 16px 0 0 16px;
 
-    background: red;
+    background: #0091e2;
+
+    box-shadow: 0 0 18px rgba(0, 145, 226, 0.45);
 
     color: #ffffff;
 
@@ -482,40 +494,52 @@ body {
     font-weight: 500;
     font-size: 16px;
 
-    cursor: pointer;
-
-    z-index: 999;
+    z-index: 10;
 }
 .question-title {
-    font-size: 16px;
-    color: white;
     position: relative;
-    text-align: center;
+
+    width: fit-content;
+
+    margin: 0 auto 38px;
+
+    font-family: "FiraGO", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #ffffff;
+
+    line-height: 100%;
 }
 
 .question-title::before,
 .question-title::after {
     content: "";
+
     position: absolute;
+
     top: 50%;
-    width: 150px;
+
+    width: 298px;
     height: 1px;
-    background: rgba(255, 255, 255, 0.5);
+
+    background: rgba(255, 255, 255, 0.35);
 }
 
 .question-title::before {
-    right: 100%;
-    margin-right: 20px;
+    right: calc(100% + 28px);
 }
 
 .question-title::after {
-    left: 100%;
-    margin-left: 20px;
+    left: calc(100% + 28px);
 }
 
 .options {
     display: flex;
-    gap: 114px;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
 }
 
 .option {
@@ -523,18 +547,26 @@ body {
     height: 95px;
 
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.2);
+
+    background: rgba(255, 255, 255, 0.16);
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.2),
+        0 10px 24px rgba(0, 0, 0, 0.18);
+
+    backdrop-filter: blur(10px);
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 14px;
 
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
+    color: #ffffff;
+
+    transition: 0.25s ease;
 }
-
 .option:hover {
     background: rgba(255, 255, 255, 0.35);
 }
