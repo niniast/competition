@@ -528,6 +528,7 @@ body {
 }
 */
 
+/*--- ARTICLES SECTION სიახლეები---*/
 .articles-section {
     width: 100%;
     padding: 80px 120px;
@@ -611,64 +612,52 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin-left: calc(100% - 240px);
     margin-top: 24px;
-
     width: 183px;
     height: 48px;
-
     border: none;
     border-radius: 16px;
-
     background: #4078be26;
     color: #000000;
-
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     cursor: pointer;
-
     transition: 0.3s ease;
 }
 
-.view-all-btn:hover {
+/*დაადარე ფიგმას.view-all-btn:hover {
     background: #dce8f8;
+}*/
+
+/* --- learn section--- */
+.learn-section {
+    padding: 48px 0 56px;
+    background: #dde9fa;
 }
 
-/* --- NEWS SECTION --- */
-
-.news-section {
-    padding: 70px 0;
-    background: #edf4ff;
-}
-
-.news-header {
+.learn-header {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
-
     margin-bottom: 55px;
 }
 
-.news-line {
+.learn-line {
     width: 203px;
     height: 2px;
-
-    background: #e4e5e9;
+    background: #ffffff;
 }
 
-.news-title {
+.learn-title {
     font-family: "FiraGO", sans-serif;
     font-weight: 500;
     font-size: 16px;
-
-    color: #1c2d5a;
+    color: #1f2a37;
 }
 
-/* --- CONTENT --- */
-
-.news-content {
+.learn-content {
     position: relative;
 
     max-width: 1040px;
@@ -679,92 +668,92 @@ body {
     padding: 20px 0 65px;
 
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
 }
 
 /* LEFT */
 
-.news-left {
+.learn-left {
+    position: absolute;
+    left: -130px;
+    top: 55px;
     display: flex;
-    align-items: center;
-    gap: 14px;
-
-    min-width: 120px;
+    align-items: flex-start;
+    gap: 10px;
 }
 
-.news-label {
+.learn-label {
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
-    font-weight: 500;
-
-    color: #243c6e;
+    font-weight: 400;
+    color: #000000;
 }
 
-/* CENTER */
+.learn-bottom-line {
+    width: 185px;
+    height: 1px;
+    background: #cdcdcd;
+    position: absolute;
+    left: -110px;
+    bottom: -12px;
+}
 
-.news-center {
+.learn-center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.news-question {
-    max-width: 560px;
-
-    margin-bottom: 38px;
-
+.learn-question {
+    max-width: 572px;
+    height: 19px;
+    margin-bottom: 24px;
     text-align: center;
-
     font-family: "FiraGO", sans-serif;
+    font-weight: 400;
     font-size: 15px;
-    line-height: 160%;
-
-    color: #243c6e;
+    line-height: 100%;
+    color: #000000;
 }
 
-.news-options {
+.learn-options {
     display: flex;
     align-items: center;
     gap: 36px;
+    width: 893px;
 }
 
-.news-option {
-    width: 220px;
-    height: 48px;
-
+.learn-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 70px;
+    border-radius: 12px;
     border: none;
-    border-radius: 14px;
-
     background: #ffffff;
-
-    box-shadow:
-        0 4px 10px rgba(36, 60, 110, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
-
+    box-shadow: 0 2px 13px rgba(34, 60, 110, 0.12);
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
-
-    color: #243c6e;
-
+    color: #223c6e;
     cursor: pointer;
-
     transition: 0.25s ease;
 }
 
-.news-option:hover {
+/*დაადარე ფიგმას.learn-option:hover {
     transform: translateY(-2px);
 
     box-shadow:
         0 8px 18px rgba(36, 60, 110, 0.12),
         inset 0 1px 0 rgba(255, 255, 255, 0.8);
-}
+}*/
 
 /* CIRCLE */
 
-.news-circle {
+.learn-circle {
     position: absolute;
 
     right: 120px;
