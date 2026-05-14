@@ -58,9 +58,11 @@
         </header>
         <section class="events-page-section">
             <div class="container">
+                <!-- TITLE -->
+                <h1 class="events-page-title">ღონისძიებები</h1>
                 <!-- TABS -->
                 <div class="events-page-tabs">
-                    <button class="events-page-tab active">
+                    <button class="events-page-tab events-page-tab--active">
                         დაგეგმილი ღონისძიებები
                     </button>
 
@@ -68,174 +70,316 @@
                         დასრულებული ღონისძიებები
                     </button>
                 </div>
+                <!-- EVENTS CONTENT -->
+                <section class="events-page-content">
+                    <div class="container">
+                        <!-- FILTERS -->
+                        <div class="events-page-filters">
+                            <!-- EVENT TYPE -->
+                            <div class="events-page-field">
+                                <select class="events-page-select">
+                                    <option>ღონისძიების ტიპი</option>
+                                </select>
+                            </div>
+                            <!-- SEARCH -->
 
-                <!-- FILTER -->
-                <div class="events-page-filter">
-                    <input
-                        type="text"
-                        placeholder="ღონისძიების ტიპი"
-                        class="events-page-input"
-                    />
+                            <div
+                                class="events-page-field events-page-search-field"
+                            >
+                                <img
+                                    src="assets/pictures/search.png"
+                                    alt="search"
+                                    class="events-page-search-icon"
+                                />
 
-                    <div class="events-page-select-wrapper">
-                        <select class="events-page-select">
-                            <option>მომდევნო თარიღი</option>
-                        </select>
-                    </div>
-
-                    <button class="events-page-search-btn">ძებნა</button>
-                </div>
-            </div>
-        </section>
-        <section class="events-archive-section">
-            <div class="container">
-                <div class="events-archive-wrapper">
-                    <!-- FILTERS -->
-
-                    <div class="events-archive-top">
-                        <!-- SEARCH INPUT -->
-
-                        <div class="events-archive-search">
-                            <input type="text" placeholder="ღონისძიების ტიპი" />
+                                <input
+                                    type="text"
+                                    class="events-page-search-input"
+                                    placeholder="მოძებნე თარიღი"
+                                />
+                            </div>
+                            <button class="events-search-btn">ძებნა</button>
                         </div>
+                        <!-- CARDS -->
+                        <div class="events-grid">
+                            <!-- CARD -->
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
 
-                        <!-- SELECT -->
+                                    <div class="events-grid-overlay"></div>
 
-                        <div class="events-archive-select-wrapper">
-                            <span class="events-archive-search-icon"> 🔍 </span>
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
 
-                            <select class="events-archive-select">
-                                <option>მომდევნო თარიღი</option>
-                            </select>
+                                    <div class="events-grid-overlay"></div>
+
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
+
+                                    <div class="events-grid-overlay"></div>
+
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
+
+                                    <div class="events-grid-overlay"></div>
+
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
+
+                                    <div class="events-grid-overlay"></div>
+
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
+
+                                    <div class="events-grid-overlay"></div>
+
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
+
+                                    <div class="events-grid-overlay"></div>
+
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
+
+                                    <div class="events-grid-overlay"></div>
+
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
+
+                                    <div class="events-grid-overlay"></div>
+
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
+
+                                    <div class="events-grid-overlay"></div>
+
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
+
+                                    <div class="events-grid-overlay"></div>
+
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
+                            <div class="events-grid-item">
+                                <span class="events-grid-badge offline"
+                                    >offline</span
+                                >
+                                <article class="events-grid-card">
+                                    <span class="events-grid-date"
+                                        >12.04.2026</span
+                                    >
+                                    <img
+                                        src="assets/pictures/events-card1.png"
+                                        alt=""
+                                    />
+
+                                    <div class="events-grid-overlay"></div>
+
+                                    <h3 class="events-grid-title">
+                                        საინფორმაციო-საგანმანათლებლო შეხვედრა
+                                        ევროპის იურისტ სტუდენტთა ასოციაციის
+                                        (ELSA Georgia)
+                                    </h3>
+                                </article>
+                            </div>
                         </div>
-
-                        <!-- BUTTON -->
-
-                        <button class="events-archive-btn">ძებნა</button>
+                        <!-- PAGINATION -->
+                        <div class="events-pagination">
+                            <span class="events-pagination-line"></span>
+                            <button class="events-pagination-btn">
+                                მეტის ნახვა
+                            </button>
+                            <span class="events-pagination-line"></span>
+                        </div>
                     </div>
-
-                    <!-- CARDS -->
-
-                    <div class="events-archive-grid">
-                        <article class="events-archive-card">
-                            <span class="events-archive-badge"> offline </span>
-
-                            <span class="events-archive-date">
-                                12.04.2026
-                            </span>
-
-                            <img src="assets/pictures/event1.png" alt="" />
-
-                            <div class="events-archive-overlay"></div>
-
-                            <h3>
-                                საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის
-                                იურისტ სტუდენტთა ასოციაციის (ELSA Georgia)
-                            </h3>
-                        </article>
-
-                        <article class="events-archive-card">
-                            <span class="events-archive-badge"> offline </span>
-
-                            <span class="events-archive-date">
-                                12.04.2026
-                            </span>
-
-                            <img src="assets/pictures/event2.png" alt="" />
-
-                            <div class="events-archive-overlay"></div>
-
-                            <h3>
-                                საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის
-                                იურისტ სტუდენტთა ასოციაციის (ELSA Georgia)
-                            </h3>
-                        </article>
-
-                        <article class="events-archive-card">
-                            <span class="events-archive-badge"> offline </span>
-
-                            <span class="events-archive-date">
-                                12.04.2026
-                            </span>
-
-                            <img src="assets/pictures/event3.png" alt="" />
-
-                            <div class="events-archive-overlay"></div>
-
-                            <h3>
-                                საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის
-                                იურისტ სტუდენტთა ასოციაციის (ELSA Georgia)
-                            </h3>
-                        </article>
-                    </div>
-                </div>
+                </section>
             </div>
         </section>
-        <section class="events-grid-section">
-            <div class="container">
-                <div class="events-grid">
-                    <!-- CARD -->
-
-                    <article class="events-grid-card">
-                        <span class="events-grid-badge offline"> offline </span>
-
-                        <span class="events-grid-date"> 12.04.2026 </span>
-
-                        <img src="assets/pictures/event-1.png" alt="" />
-
-                        <div class="events-grid-overlay"></div>
-
-                        <h3 class="events-grid-title">
-                            საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის იურისტ
-                            სტუდენტთა ასოციაციის (ELSA Georgia)
-                        </h3>
-                    </article>
-
-                    <!-- CARD -->
-
-                    <article class="events-grid-card">
-                        <span class="events-grid-badge offline"> offline </span>
-
-                        <span class="events-grid-date"> 12.04.2026 </span>
-
-                        <img src="assets/pictures/event-2.png" alt="" />
-
-                        <div class="events-grid-overlay"></div>
-
-                        <h3 class="events-grid-title">
-                            საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის იურისტ
-                            სტუდენტთა ასოციაციის (ELSA Georgia)
-                        </h3>
-                    </article>
-
-                    <!-- CARD -->
-
-                    <article class="events-grid-card">
-                        <span class="events-grid-badge online"> online </span>
-
-                        <span class="events-grid-date"> 01.03.2026 </span>
-
-                        <img src="assets/pictures/event-3.png" alt="" />
-
-                        <div class="events-grid-overlay"></div>
-
-                        <h3 class="events-grid-title">
-                            საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის იურისტ
-                            სტუდენტთა ასოციაციის (ELSA Georgia)
-                        </h3>
-                    </article>
-
-                    <!-- დააკოპირე რამდენიც გჭირდება -->
-                </div>
-            </div>
-        </section>
-        <div class="events-pagination">
-            <span class="events-pagination-line"></span>
-
-            <button class="events-pagination-btn">მეტის ნახვა</button>
-
-            <span class="events-pagination-line"></span>
-        </div>
         <footer class="footer">
             <div class="footer-overlay"></div>
 
