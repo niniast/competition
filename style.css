@@ -1545,3 +1545,160 @@ body {
 .events-pagination-btn:hover {
     background: #e7eef9;
 }
+
+
+/*------event detials page------*/
+.event-details-section {
+    padding: 40px 0 80px;
+}
+
+/* TITLE*/
+
+.event-details-title {
+    width: 996px;
+
+    margin: 0 auto 32px;
+
+    text-align: center;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+
+    color: #ffffff;
+}
+.event-details-line {
+    width: 411px;
+    height: 1px;
+    margin: 0 auto 32px;
+    background: #CCE9F9;
+}
+
+/* =========================
+   META
+========================= */
+
+.event-details-meta {
+    width: 1200px;
+    margin: 0 auto 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event-details-location,
+.event-details-date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "FiraGO", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.event-details-location img,
+.event-details-date img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.event-details-badge {
+    height: 28px;
+
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    border: 1px solid #FFB901;
+
+    background: #1f4fb8;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #ffffff;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.event-details-card {
+    width: 996px;
+
+    margin: 0 auto;
+
+    padding: 24px 28px;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 4px 27px rgba(202, 221, 240, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.event-details-card p {
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+
+    color: #1f2a37;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.event-details-btn-wrapper {
+    margin-top: 36px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.event-details-btn {
+    width: 204px;
+    height: 48px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        180deg,
+        #0f4fc6 0%,
+        #123b92 100%
+    );
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.event-details-btn:hover {
+    transform: translateY(-2px);
+}
