@@ -1,0 +1,327 @@
+<html lang="ka">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>competition</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header-top">
+                <!-- LEFT: LOGO + TEXT -->
+                <div class="header-left">
+                    <img
+                        src="assets/pictures/logo.png"
+                        alt="logo"
+                        class="logo"
+                    />
+                    <div class="divider"></div>
+                    <div class="header-text">
+                        საქართველოს კონკურენციისა<br />
+                        და მომხმარებლის<br />
+                        დაცვის სააგენტო
+                    </div>
+                </div>
+
+                <!-- RIGHT: SOCIAL + LANG -->
+                <div class="header-right">
+                    <div class="socials">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                        <a href="#" aria-label="X (Twitter)">x</a>
+                    </div>
+
+                    <div class="lang">
+                        <span class="active">GE</span> /
+                        <span>EN</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav class="nav">
+                <a href="#" class="active">ჩვენ შესახებ</a>
+                <a href="#">ლექსიკონი</a>
+                <a href="#">რესურსები</a>
+                <a href="#">ღონისძიებები</a>
+                <a href="#">სიახლეები და ბლოგი</a>
+                <a href="#">კონტაქტი</a>
+            </nav>
+        </header>
+        <section class="events-page-section">
+            <div class="container">
+                <!-- TABS -->
+                <div class="events-page-tabs">
+                    <button class="events-page-tab active">
+                        დაგეგმილი ღონისძიებები
+                    </button>
+
+                    <button class="events-page-tab">
+                        დასრულებული ღონისძიებები
+                    </button>
+                </div>
+
+                <!-- FILTER -->
+                <div class="events-page-filter">
+                    <input
+                        type="text"
+                        placeholder="ღონისძიების ტიპი"
+                        class="events-page-input"
+                    />
+
+                    <div class="events-page-select-wrapper">
+                        <select class="events-page-select">
+                            <option>მომდევნო თარიღი</option>
+                        </select>
+                    </div>
+
+                    <button class="events-page-search-btn">ძებნა</button>
+                </div>
+            </div>
+        </section>
+        <section class="events-archive-section">
+            <div class="container">
+                <div class="events-archive-wrapper">
+                    <!-- FILTERS -->
+
+                    <div class="events-archive-top">
+                        <!-- SEARCH INPUT -->
+
+                        <div class="events-archive-search">
+                            <input type="text" placeholder="ღონისძიების ტიპი" />
+                        </div>
+
+                        <!-- SELECT -->
+
+                        <div class="events-archive-select-wrapper">
+                            <span class="events-archive-search-icon"> 🔍 </span>
+
+                            <select class="events-archive-select">
+                                <option>მომდევნო თარიღი</option>
+                            </select>
+                        </div>
+
+                        <!-- BUTTON -->
+
+                        <button class="events-archive-btn">ძებნა</button>
+                    </div>
+
+                    <!-- CARDS -->
+
+                    <div class="events-archive-grid">
+                        <article class="events-archive-card">
+                            <span class="events-archive-badge"> offline </span>
+
+                            <span class="events-archive-date">
+                                12.04.2026
+                            </span>
+
+                            <img src="assets/pictures/event1.png" alt="" />
+
+                            <div class="events-archive-overlay"></div>
+
+                            <h3>
+                                საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის
+                                იურისტ სტუდენტთა ასოციაციის (ELSA Georgia)
+                            </h3>
+                        </article>
+
+                        <article class="events-archive-card">
+                            <span class="events-archive-badge"> offline </span>
+
+                            <span class="events-archive-date">
+                                12.04.2026
+                            </span>
+
+                            <img src="assets/pictures/event2.png" alt="" />
+
+                            <div class="events-archive-overlay"></div>
+
+                            <h3>
+                                საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის
+                                იურისტ სტუდენტთა ასოციაციის (ELSA Georgia)
+                            </h3>
+                        </article>
+
+                        <article class="events-archive-card">
+                            <span class="events-archive-badge"> offline </span>
+
+                            <span class="events-archive-date">
+                                12.04.2026
+                            </span>
+
+                            <img src="assets/pictures/event3.png" alt="" />
+
+                            <div class="events-archive-overlay"></div>
+
+                            <h3>
+                                საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის
+                                იურისტ სტუდენტთა ასოციაციის (ELSA Georgia)
+                            </h3>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="events-grid-section">
+            <div class="container">
+                <div class="events-grid">
+                    <!-- CARD -->
+
+                    <article class="events-grid-card">
+                        <span class="events-grid-badge offline"> offline </span>
+
+                        <span class="events-grid-date"> 12.04.2026 </span>
+
+                        <img src="assets/pictures/event-1.png" alt="" />
+
+                        <div class="events-grid-overlay"></div>
+
+                        <h3 class="events-grid-title">
+                            საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის იურისტ
+                            სტუდენტთა ასოციაციის (ELSA Georgia)
+                        </h3>
+                    </article>
+
+                    <!-- CARD -->
+
+                    <article class="events-grid-card">
+                        <span class="events-grid-badge offline"> offline </span>
+
+                        <span class="events-grid-date"> 12.04.2026 </span>
+
+                        <img src="assets/pictures/event-2.png" alt="" />
+
+                        <div class="events-grid-overlay"></div>
+
+                        <h3 class="events-grid-title">
+                            საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის იურისტ
+                            სტუდენტთა ასოციაციის (ELSA Georgia)
+                        </h3>
+                    </article>
+
+                    <!-- CARD -->
+
+                    <article class="events-grid-card">
+                        <span class="events-grid-badge online"> online </span>
+
+                        <span class="events-grid-date"> 01.03.2026 </span>
+
+                        <img src="assets/pictures/event-3.png" alt="" />
+
+                        <div class="events-grid-overlay"></div>
+
+                        <h3 class="events-grid-title">
+                            საინფორმაციო-საგანმანათლებლო შეხვედრა ევროპის იურისტ
+                            სტუდენტთა ასოციაციის (ELSA Georgia)
+                        </h3>
+                    </article>
+
+                    <!-- დააკოპირე რამდენიც გჭირდება -->
+                </div>
+            </div>
+        </section>
+        <div class="events-pagination">
+            <span class="events-pagination-line"></span>
+
+            <button class="events-pagination-btn">მეტის ნახვა</button>
+
+            <span class="events-pagination-line"></span>
+        </div>
+        <footer class="footer">
+            <div class="footer-overlay"></div>
+
+            <div class="container footer-container">
+                <!-- LEFT -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">ნავიგაცია</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="#">ჩვენ შესახებ</a></li>
+                        <li><a href="#">ჩვენი ლექსიკონი</a></li>
+                        <li><a href="#">ღონისძიებები</a></li>
+                        <li><a href="#">სიახლეები</a></li>
+                    </ul>
+                </div>
+                <!-- SECOND COLUMN -->
+
+                <div class="footer-column footer-modules">
+                    <h3 class="footer-heading">სასწავლო მოდულები</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="#">ხშირად დასმული კითხვები</a></li>
+                        <li><a href="#">საჯარო ინფორმაცია</a></li>
+                        <li><a href="#">რესურსები</a></li>
+                    </ul>
+                </div>
+
+                <!-- CENTER -->
+                <div class="footer-center">
+                    <img
+                        src="assets/pictures/footer-logo.png"
+                        alt="ლოგო"
+                        class="footer-logo"
+                    />
+
+                    <div class="socials">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                        <a href="#" aria-label="X (Twitter)">x</a>
+                    </div>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="footer-column footer-contact">
+                    <h3 class="footer-heading">კონტაქტი</h3>
+
+                    <div class="contact-item">
+                        <img src="assets/pictures/footer-mail.png" alt="mail" />
+
+                        <span class="contact-label">ელ.ფოსტა:</span>
+
+                        <a href="mailto:info@gcca.gov.ge" class="contact-link">
+                            INFO@GCCA.GOV.GE
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <img
+                            src="assets/pictures/footer-call.png"
+                            alt="phone"
+                        />
+
+                        <span class="contact-label">ცხელი ხაზი:</span>
+
+                        <a href="tel:1520" class="contact-link"> 1520 </a>
+                    </div>
+
+                    <form class="footer-form">
+                        <input type="email" placeholder="თქვენი ელ. ფოსტა" />
+
+                        <button type="submit">
+                            გამოწერა
+                            <img
+                                src="assets/pictures/footer-arrow.png"
+                                alt="arrow"
+                            />
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-quote">
+                „სწორ გადაწყვეტილებას“ ქმნის ინფორმაცია და ცოდნა!!!
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-bottom">ყველა უფლება დაცულია</div>
+        </footer>
+    </body>
+</html>
