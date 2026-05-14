@@ -1462,29 +1462,25 @@ body {
 }
 
 .events-grid-badge.offline {
-    background: #f2f4f7;
+    background: #ebeef4b2;
     color: #000000;
 }
 
 .events-grid-badge.online {
-    background: #d9f3ff;
-    color: #0091e2;
+    background: #bbe2f9b2;
+    color: #000000;
 }
 
 /* DATE */
 
 .events-grid-date {
     position: absolute;
-
     top: 14px;
     right: 14px;
-
     z-index: 3;
-
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-
+    font-size: 18px;
+    font-weight: 600;
     color: #ffffff;
 }
 
@@ -1492,33 +1488,26 @@ body {
 
 .events-grid-title {
     position: absolute;
-
     left: 28px;
     right: 28px;
     bottom: 28px;
-
     z-index: 3;
-
     text-align: center;
-
     font-family: "FiraGO", sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 155%;
-
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
     color: #ffffff;
 }
 /* PAGINATION */
 
 .events-pagination {
     width: 1200px;
-
+    height: 48px;
     margin: 34px auto 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 16px;
 }
 
@@ -1526,26 +1515,25 @@ body {
 
 .events-pagination-line {
     flex: 1;
-
+    width: 411px;
     height: 1px;
-
-    background: #d8dfea;
+    background: #cce9f9;
 }
 
 /* BUTTON */
 
 .events-pagination-btn {
-    width: 228px;
+    width: 303px;
     height: 48px;
 
     border: none;
-    border-radius: 999px;
+    border-radius: 16px;
 
-    background: #f2f6fc;
+    background: background: rgba(242, 246, 252, 0.9);
 
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
 
     color: #10225d;
 
