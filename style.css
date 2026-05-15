@@ -1611,22 +1611,16 @@ body {
 
 .event-details-badge {
     height: 28px;
-
     padding: 0 18px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 8px;
     border: 1px solid #FFB901;
-
     background: #1f4fb8;
-
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 500;
-
     color: #ffffff;
 }
 
@@ -1635,7 +1629,7 @@ body {
 ========================= */
 
 .event-details-card {
-    width: 996px;
+    width: 1200px;
 
     margin: 0 auto;
 
@@ -1700,5 +1694,337 @@ body {
 }
 
 .event-details-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================
+   NEWS PAGE
+========================= */
+
+.news-page-section {
+    padding-top: 48px;
+}
+
+/* 
+   TITLE*/
+
+.news-page-title {
+    margin-bottom: 28px;
+    text-align: center;
+    font-family: "FiraGO", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #30CBFF
+}
+
+/*  TABS */
+
+.news-page-tabs {
+   position: relative;
+    z-index: 3;
+    width: 1201px;
+    height: 70px;
+    margin: 0 auto -10px;
+    display: flex;
+    justify-content: center;
+    gap: 47px;
+}
+
+/* TAB BUTTON */
+
+.news-page-tab {
+      position: relative;
+    top: 10px;
+    width: 577px;
+    height: 60px;
+    border: 1px solid #69aeff;
+    border-radius: 16px 16px 0 0;
+    background: linear-gradient(180deg, #0f4fc6 0%, #123b92 100%);
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* ACTIVE TAB გადაამოწმე ფიგმაში
+
+.news-page-tab--active {
+    border-color: #00b8e1;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 184, 225, 0.35) 0%,
+            rgba(15, 79, 198, 0.18) 100%
+        );
+}
+ 
+
+.news-page-tab:hover {
+    transform: translateY(-2px);
+
+    border-color: #00b8e1;
+}*/
+
+/* =========================
+   FILTERS
+========================= */
+
+.news-page-filters {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    margin-bottom: 42px;
+}
+
+/* =========================
+   FIELD
+========================= */
+
+.news-page-field {
+    position: relative;
+    width: 576px;
+    height: 44px;
+}
+
+/* =========================
+   SELECT
+========================= */
+
+.news-page-select {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    border: 1px solid #cbd2e2;
+    border-radius: 8px;
+    background: #ffffff;
+    appearance: none;
+    outline: none;
+    font-family: "FiraGO", sans-serif;
+    font-size: 16x;
+    font-weight: 500;
+    color: #47536e;
+    cursor: pointer;
+}
+/* =========================
+   SEARCH FIELD
+========================= */
+
+.news-page-search-field {
+    width: 420px;
+    height: 56px;
+}
+
+/* =========================
+   SEARCH INPUT
+========================= */
+
+.news-page-search-input {
+  width: 100%;
+    height: 100%;
+    padding: 0 20px 0 50px;
+    border: 1px solid #cbd2e2;
+    border-radius: 8px;
+    background: #ffffff;
+    outline: none;
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #a1afcf;
+}
+
+/* =========================
+   SEARCH ICON
+========================= */
+
+.news-page-search-icon {
+    position: absolute;
+
+    top: 50%;
+    left: 20px;
+
+    transform: translateY(-50%);
+
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.news-page-search-btn {
+    width: 83px;
+    height: 41px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(180deg, #07aee6 0%, #0c3ba5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #ffffff;
+    cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.news-page-search-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   GRID SECTION
+========================= */
+
+.news-page-grid-section {
+    padding-bottom: 70px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.news-page-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 281px);
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.news-page-card {
+    width: 282px;
+    min-height: 278px;
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 18px rgba(202, 221, 240, 0.35);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.news-page-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 24px rgba(202, 221, 240, 0.45);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.news-page-card-image-wrapper {
+    position: relative;
+
+    width: 100%;
+     height: 146px;
+}
+
+.news-page-card-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* =========================
+   DATE
+========================= */
+
+.news-page-card-date {
+    position: absolute;
+
+    top: 16px;
+    right: 16px;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #ffffff;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.news-page-card-content {
+    padding: 14px 14px 18px;
+}
+
+.news-page-card-text {
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+
+    color: #1f2937;
+}
+
+/* =========================
+   BUTTON WRAPPER
+========================= */
+
+.news-page-more-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.news-page-more-btn {
+    width: 204px;
+    height: 48px;
+
+    border: none;
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #dbeafe 0%,
+            #bfdbfe 100%
+        );
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #123b92;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.news-page-more-btn:hover {
     transform: translateY(-2px);
 }
