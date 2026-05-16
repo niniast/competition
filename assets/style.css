@@ -1453,44 +1453,41 @@ body {
 }
 
 .events-pagination-btn:hover {
-    background: #e7eef9;
+    width: 100%;
+    padding: 70px 0 80px;
+
+    background: #ffffff;
 }
 
-/*---------event detials page------*/
-.event-details-section {
-    padding: 40px 0 80px;
+/*---------/////event detials page/////------*/
+/*blue section*/
+.event-blue-section {
+    padding: 40px 0 100px;
+    background: #0d2d83;
 }
-
-/* TITLE*/
 
 .event-details-title {
     width: 996px;
-
-    margin: 0 auto 32px;
-
+    margin: 30px auto 30px;
     text-align: center;
-
     font-family: "FiraGO", sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 100%;
-
     color: #ffffff;
+    text-wrap: balance;
 }
+
 .event-details-line {
     width: 411px;
     height: 1px;
-    margin: 0 auto 32px;
+    margin: 0 auto 40px;
     background: #cce9f9;
 }
-
-/* =========================
-   META
-========================= */
-
 .event-details-meta {
     width: 1200px;
-    margin: 0 auto 28px;
+    margin: 0 auto 10px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1514,11 +1511,9 @@ body {
     object-fit: contain;
 }
 
-/* =========================
-   BADGE
-========================= */
-
 .event-details-badge {
+    position: relative;
+    left: -40px;
     height: 28px;
     padding: 0 18px;
     display: flex;
@@ -1533,26 +1528,24 @@ body {
     color: #ffffff;
 }
 
-/* =========================
-   CARD
-========================= */
+/*white section*/
+.event-white-section {
+    background: #ffffff;
+    padding: 0 0 80px;
+    position: relative;
+}
+
+/* OVERLAP CARD */
 
 .event-details-card {
     width: 1200px;
-
-    margin: 0 auto;
-
+    top: -70px;
     padding: 24px 28px;
-
     border-radius: 16px;
-
-    background: #ffffff;
-
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 27px rgba(202, 221, 240, 0.3);
-
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+    position: relative;
+    z-index: 2;
 }
 
 .event-details-card p {
@@ -1560,41 +1553,49 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
-
     color: #1f2a37;
 }
 
-/* =========================
-   BUTTON
-========================= */
+/*  BUTTON */
 
 .event-details-btn-wrapper {
     margin-top: 36px;
-
     display: flex;
     justify-content: center;
 }
 
 .event-details-btn {
-    width: 204px;
+    width: 303px;
     height: 48px;
-
     border: none;
-    border-radius: 12px;
-
-    background: linear-gradient(180deg, #0f4fc6 0%, #123b92 100%);
-
+    border-radius: 16px;
+    background: #143496;
     font-family: "FiraGO", sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-
+    font-size: 16px;
+    font-weight: 400;
     color: #ffffff;
-
     cursor: pointer;
-
     transition:
         transform 0.25s ease,
         opacity 0.25s ease;
+}
+.event-details-divider {
+    width: 1200px;
+
+    margin: 36px auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.event-divider-line {
+    flex: 1;
+    height: 1px;
+
+    background: #cce9f9;
 }
 
 .event-details-btn:hover {
