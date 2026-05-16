@@ -1455,7 +1455,6 @@ body {
 .events-pagination-btn:hover {
     width: 100%;
     padding: 70px 0 80px;
-
     background: #ffffff;
 }
 
@@ -1579,22 +1578,19 @@ body {
         transform 0.25s ease,
         opacity 0.25s ease;
 }
+
 .event-details-divider {
     width: 1200px;
-
     margin: 36px auto 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 20px;
 }
 
 .event-divider-line {
     flex: 1;
     height: 1px;
-
     background: #cce9f9;
 }
 
