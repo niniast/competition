@@ -1666,9 +1666,7 @@ body {
     color: #ffffff;
 }
 
-/* =========================
-   CONTENT
-========================= */
+/* CONTENT */
 
 .news-page-card-content {
     padding: 14px 14px 18px;
@@ -1733,7 +1731,6 @@ body {
 
 .news-inner-section {
     padding: 48px 0 80px;
-
     background: #ffffff;
 }
 
@@ -1743,62 +1740,62 @@ body {
 
 .news-inner-top {
     width: 1200px;
-
     margin: 0 auto 24px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 20px;
 }
 
 .news-inner-line {
-    flex: 1;
-
     height: 1px;
-
+    width: 108px;
     background: #cce9f9;
 }
 
 .news-inner-title {
-    max-width: 700px;
-
+    max-width: 910px;
     text-align: center;
-
     font-family: "FiraGO", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 140%;
-
-    color: #10225d;
+    line-height: 100%;
+    color: #02103a;
 }
-
 /* =========================
-   META
+   WRAPPER
 ========================= */
 
+.news-inner-gallery-wrapper {
+    width: 1304px;
+    margin: 0 auto 32px;
+    padding: 18px 28px 28px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* META */
+
 .news-inner-meta {
-    width: 1200px;
-
-    margin: 0 auto 28px;
-
+    padding: 0 38px; /* ეს ზრდის შიგნით შეწევას */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* META */
+
 .news-inner-date {
     display: flex;
     align-items: center;
-
     gap: 10px;
-
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-
-    color: #10225d;
+    color: #072375;
 }
 
 .news-inner-date img {
@@ -1807,25 +1804,18 @@ body {
 }
 
 .news-inner-badge {
-    height: 28px;
-
+    height: 32px;
     padding: 0 18px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 8px;
-
     border: 1px solid #ffb901;
-
     background: #ffffff;
-
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-
-    color: #10225d;
+    color: #072375;
 }
 
 /* =========================
@@ -1833,62 +1823,80 @@ body {
 ========================= */
 
 .news-inner-gallery {
-    width: 1200px;
-
-    margin: 0 auto 32px;
-
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
     gap: 20px;
 }
+
+/* CENTER ROW */
 
 .news-inner-gallery-grid {
     display: flex;
     align-items: center;
-
     gap: 12px;
 }
 
-.news-inner-gallery-side {
-    display: flex;
-    flex-direction: column;
+/* ALL IMAGES */
 
-    gap: 12px;
-}
-
-.news-inner-gallery-side img {
-    width: 120px;
-    height: 145px;
-
-    border-radius: 12px;
-
+.news-inner-gallery-item img {
+    display: block;
     object-fit: cover;
+    border-radius: 8px;
+    transition:
+        width 0.35s ease,
+        height 0.35s ease,
+        transform 0.35s ease,
+        opacity 0.35s ease;
 }
 
-.news-inner-gallery-main img {
-    width: 320px;
-    height: 300px;
+/* SMALL IMAGES */
 
-    border-radius: 16px;
+.news-inner-gallery-item:not(.active) img {
+    width: 183px;
+    height: 268px;
 
-    object-fit: cover;
+    opacity: 0.95;
 }
+
+/* ACTIVE IMAGE */
+
+.news-inner-gallery-item.active img {
+    width: 386px;
+    height: 430px;
+    border-radius: 8px;
+}
+
+/* ARROWS */
 
 .news-inner-arrow {
-    width: 48px;
-    height: 48px;
-
+    width: 42px;
+    height: 42px;
     border: none;
-
     background: transparent;
-
-    font-size: 32px;
-
-    color: #10225d;
-
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.news-inner-arrow img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    display: block;
+}
+.left-arrow img {
+    transform: rotate(180deg);
+}
+.news-inner-arrow:hover {
+    transform: scale(1.08);
+    opacity: 0.85;
 }
 
 /* =========================
