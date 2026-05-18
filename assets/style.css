@@ -1904,30 +1904,24 @@ body {
 ========================= */
 
 .news-inner-content-card {
-    width: 1200px;
-
+    width: 1140px;
     margin: 0 auto 40px;
-
     padding: 28px 30px;
-
     border-radius: 16px;
-
     background: rgba(255, 255, 255, 0.9);
-
     box-shadow: 0 4px 27px rgba(202, 221, 240, 0.3);
 }
 
 .news-inner-content-card p {
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-
-    color: #1f2a37;
+    color: #000000;
 }
 
 .news-inner-content-card p + p {
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 /* =========================
@@ -1936,26 +1930,26 @@ body {
 
 .news-inner-social-wrapper {
     width: 1200px;
-
     margin: 0 auto;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    gap: 24px;
+    gap: 16px;
 }
 
 .news-inner-socials {
     display: flex;
     align-items: center;
-
-    gap: 16px;
+    gap: 26px;
 }
 
 .news-inner-socials a img {
-    width: 24px;
-    height: 24px;
-
+    width: 32px;
+    height: 32px;
     object-fit: contain;
+}
+.news-inner-line2 {
+    height: 1px;
+    width: 518px;
+    background: #cce9f9;
 }
