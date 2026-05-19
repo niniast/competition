@@ -941,6 +941,9 @@ body {
 }
 
 .event-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     width: 387px;
     height: 234px;
 }
@@ -1040,17 +1043,11 @@ body {
     margin-bottom: 64px;
 }
 
-/*დაადარე ფიგმას.event-button:hover {
-    transform: translateY(-2px);
-
-    background: rgba(64, 120, 190, 0.18);
-}*/
-
 /* --- FOOTER --- */
 
 .footer {
     position: relative;
-    padding-top: 55px;
+    padding-top: 20px;
     background: linear-gradient(135deg, #10225d 0%, #16348a 50%, #1d3f9c 100%);
     color: #ffffff;
 }
