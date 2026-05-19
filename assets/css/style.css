@@ -670,6 +670,9 @@ body {
 }
 
 .article-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     width: 281px;
     height: 308px;
     padding: 1px;
@@ -748,14 +751,10 @@ body {
     transition: 0.3s ease;
 }
 
-/*დაადარე ფიგმას.view-all-btn:hover {
-    background: #dce8f8;
-}*/
-
 /* --- learn section--- */
 .learn-section {
     position: relative;
-    padding: 48px 0 56px;
+    padding: 48px 0;
     background: #dde9fa;
 }
 
@@ -763,8 +762,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
-    margin-bottom: 55px;
+    gap: 27px;
+    margin-bottom: 70px;
 }
 
 .learn-line {
@@ -776,7 +775,7 @@ body {
 .learn-title {
     font-family: "FiraGO", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     color: #1f2a37;
 }
 
@@ -794,11 +793,11 @@ body {
 
 .learn-left {
     position: absolute;
-    left: -130px;
-    top: -30px;
+    left: -120px;
+    top: -50px;
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 20px;
 }
 
 .learn-label {
@@ -813,7 +812,7 @@ body {
     height: 1px;
     background: #cdcdcd;
     position: absolute;
-    left: -110px;
+    left: -100px;
     bottom: -12px;
 }
 
@@ -826,11 +825,11 @@ body {
 .learn-question {
     max-width: 572px;
     height: 19px;
-    margin-bottom: 24px;
+    margin-bottom: 46px;
     text-align: center;
     font-family: "FiraGO", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 100%;
     color: #000000;
 }
@@ -838,7 +837,7 @@ body {
 .learn-options {
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 71px;
     width: 893px;
 }
 
@@ -848,10 +847,11 @@ body {
     justify-content: center;
     width: 250px;
     height: 70px;
-    border-radius: 12px;
-    border: none;
-    background: #ffffff;
-    box-shadow: 0 2px 13px rgba(34, 60, 110, 0.12);
+    border-radius: 16px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 13px rgba(34, 60, 110, 0.25);
+    backdrop-filter: blur(8px);
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -859,14 +859,6 @@ body {
     cursor: pointer;
     transition: 0.25s ease;
 }
-
-/*დაადარე ფიგმას.learn-option:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 18px rgba(36, 60, 110, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
-}*/
 
 /* CIRCLE */
 .circle {
