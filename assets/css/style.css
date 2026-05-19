@@ -391,7 +391,7 @@ body {
     height: 311px;
     display: flex;
     flex-direction: column;
-    padding: 0 18px;
+    padding: 0 26px;
 }
 .card-title {
     width: 178px;
@@ -427,7 +427,7 @@ body {
     content: "";
     width: 7px;
     height: 31px;
-    background: #00b8e1;
+    background: #ffb901;
     transform: rotate(29deg);
     display: block;
 }
@@ -521,12 +521,18 @@ body {
     font-family: "DM Giorgi Khorghuashvili", cursive;
     font-weight: 400;
     font-size: 24px;
-    line-height: 140%;
+    line-height: 100%;
     text-align: center;
-    background: linear-gradient(90deg, #07aee6, #ffffff);
+    background: linear-gradient(
+        90deg,
+        #07aee6 0%,
+        #5fd3f5 35%,
+        #dff7ff 70%,
+        #ffffff 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 40px auto;
+    margin: 50px auto;
     max-width: 643px;
     padding-top: 6px;
     padding-bottom: 4px;
@@ -541,7 +547,6 @@ body {
     border: none;
     border-radius: 16px 0 0 16px;
     background: #0091e2;
-    box-shadow: 0 0 18px rgba(0, 145, 226, 0.45);
     color: #ffffff;
     font-family: "FiraGO", sans-serif;
     font-weight: 500;
@@ -552,7 +557,7 @@ body {
 .user-options {
     max-width: 996px;
     width: 100%;
-    margin: 0 auto;
+    margin: 104px auto;
     position: relative;
     z-index: 2;
 }
@@ -566,10 +571,10 @@ body {
 .question-title {
     position: relative;
     width: fit-content;
-    margin: 0 auto 38px;
+    margin: 0 auto 52px;
     font-family: "FiraGO", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
     line-height: 100%;
 }
@@ -581,15 +586,19 @@ body {
     top: 50%;
     width: 203px;
     height: 1px;
-    background: rgba(255, 255, 255, 0.35);
+    background: #ffffff;
 }
 
 .question-title::before {
-    right: calc(100% + 28px);
+    left: -;
+}
+
+.question-title::before {
+    right: calc(100% + 27px);
 }
 
 .question-title::after {
-    left: calc(100% + 28px);
+    left: calc(100% + 27px);
 }
 
 .options {
@@ -602,19 +611,33 @@ body {
 .option {
     width: 256px;
     height: 95px;
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+
     border-radius: 16px;
+
     background: rgba(218, 234, 246, 0.4);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
     box-shadow:
         0 11px 16px rgba(34, 60, 110, 0.25),
-        inset 0 4px 7px rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(8px);
+        inset 0 4px 7px rgba(253, 254, 255, 0.5);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
     color: #ffffff;
+
     cursor: pointer;
-    transition: 0.3s ease;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
 }
 
 /*დაადარდე ფიგმას .option:hover {
