@@ -1260,9 +1260,6 @@ body {
     object-fit: contain;
     flex-shrink: 0;
 }
-/*დაადარე ფიგმას.footer-form button:hover {
-    background: #0998c8;
-}*/
 
 /* --- BOTTOM --- */
 .footer-line {
@@ -1291,12 +1288,13 @@ body {
 /*   TITLE */
 
 .events-page-title {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 31px;
+    margin-top: 25px;
     text-align: center;
     font-family: "FiraGO", sans-serif;
     font-size: 20px;
     font-weight: 600;
+    text-transform: uppercase;
     line-height: 100%;
     color: #30cbff;
 }
@@ -1327,17 +1325,20 @@ body {
     font-weight: 600;
     color: #ffffff;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 /* ACTIVE TAB */
 
-/*დაადარე ფიგმას.events-page-tab--active {
+.events-page-tab--active {
     background: linear-gradient(180deg, #1167d9 0%, #0a4697 100%);
-}*/
+    height: 70px;
+    margin: 0 auto -20px;
+}
 
 /* CONTENT AREA */
 .events-page-section {
-    margin-top: 16px;
+    margin-top: 14px;
 }
 
 .events-page-content {
@@ -1346,14 +1347,13 @@ body {
     width: 100%;
     background: #ffffff;
     border-radius: 16px 16px 0 0;
-    padding-top: 18px;
-    padding-bottom: 60px;
+    padding-top: 14px;
 }
 /* FILTERS */
 
 .events-page-filters {
     width: 1201px;
-    margin: 0 auto 42px;
+    margin: 0 auto 73px;
     display: flex;
     align-items: center;
     gap: 47px;
@@ -1423,7 +1423,7 @@ body {
 .events-page-search-input {
     flex: 1;
     height: 100%;
-    padding: 0 20px 0 50px;
+    padding: 0 20px 0 180px;
     border: 1px solid #cbd2e2;
     border-radius: 8px;
     background: #ffffff;
@@ -1442,7 +1442,7 @@ body {
     height: 41px;
     border: none;
     border-radius: 11px;
-    background: linear-gradient(180deg, #07aee6 0%, #0c3ba5 100%);
+    background: linear-gradient(180deg, #0c3ba5 0%, #07aee6 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1461,7 +1461,7 @@ body {
 /* cards */
 
 .events-grid-section {
-    padding: 30px 0 60px;
+    padding: 30px 0;
 }
 
 /* GRID */
