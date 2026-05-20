@@ -1685,7 +1685,7 @@ body {
 }
 
 /*white section*/
-.event-white-section {
+.event-inner-white-section {
     background: #ffffff;
     padding: 0 0 80px;
     position: relative;
@@ -1693,10 +1693,10 @@ body {
 
 /* OVERLAP CARD */
 
-.event-details-card {
+.event-inner-card {
     width: 1200px;
-    top: -70px;
-    padding: 24px 28px;
+    top: -80px;
+    padding: 23px 28px;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 27px rgba(202, 221, 240, 0.3);
@@ -1704,57 +1704,52 @@ body {
     z-index: 2;
 }
 
-.event-details-card p {
+.event-inner-card p {
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
-    color: #1f2a37;
+    line-height: 120%;
+    color: #000000;
 }
 
-/*  BUTTON */
+/* =========================
+   EVENT DIVIDER
+========================= */
 
-.event-details-btn-wrapper {
-    margin-top: 36px;
-    display: flex;
-    justify-content: center;
+.event-inner-divider {
+    width: 1200px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    column-gap: 37px;
 }
 
-.event-details-btn {
+.event-inner-divider-line {
+    width: 100%;
+    height: 1px;
+    background: #cce9f9;
+}
+
+/* BUTTON */
+.event-inner-btn {
     width: 303px;
     height: 48px;
-    border: none;
+    border: 1px solid rgba(79, 151, 255, 0.6);
     border-radius: 16px;
     background: #143496;
+    box-shadow: 0 2px 9px rgba(34, 60, 110, 0.1);
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
     cursor: pointer;
-    transition:
-        transform 0.25s ease,
-        opacity 0.25s ease;
+    transition: 0.25s ease;
 }
 
-.event-details-divider {
-    width: 1200px;
-    margin: 36px auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.event-divider-line {
-    flex: 1;
-    height: 1px;
-    background: #cce9f9;
-}
-
-.event-details-btn:hover {
+.event-inner-btn:hover {
     transform: translateY(-2px);
 }
-
 /* =========================
    NEWS PAGE
 ========================= */
