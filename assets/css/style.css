@@ -20,6 +20,16 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: "DM Giorgi";
+
+    src: url("../fonts/dm-giorgi-khorguashvili.ttf") format("truetype");
+
+    font-weight: 400;
+    font-style: normal;
+
+    font-display: swap;
+}
 
 body {
     background: #0b2a6f;
@@ -65,21 +75,33 @@ body {
     gap: 15px;
 }
 
+/* LOGO LINK */
+
+.logo-link {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.logo-link:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* LOGO IMAGE */
+
 .logo {
-    width: 50px;
-}
+    width: 328.83px;
+    height: 84.82px;
 
-.divider {
-    width: 1px;
-    height: 51px;
-    background: #ffffff;
-}
+    object-fit: contain;
 
-.header-text {
-    color: white;
-    font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    line-height: 1.4;
+    display: block;
 }
 
 .header-right {
@@ -441,6 +463,7 @@ body {
     justify-content: center;
     border-radius: 8px;
     margin: 27px auto;
+    font-family: "DM Giorgi", sans-serif;
     background-image: url("../images/background.png");
     background-size: cover;
     background-position: center;
@@ -516,7 +539,7 @@ body {
 }
 
 .handwritten-text {
-    font-family: "DM Giorgi Khorghuashvili", cursive;
+    font-family: "DM Giorgi", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 100%;
@@ -2126,6 +2149,342 @@ body {
     height: 1px;
     width: 518px;
     background: #cce9f9;
+}
+
+/* =========================
+   DICTIONARY PAGE
+========================= */
+
+.dictionary-page-section {
+    padding: 56px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dictionary-page-container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* TITLE */
+
+.dictionary-page-title {
+    margin-bottom: 18px;
+
+    text-align: center;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+
+    color: #30cbff;
+}
+
+/* DESCRIPTION */
+
+.dictionary-page-description {
+    margin-bottom: 22px;
+
+    text-align: center;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 100%;
+
+    color: #ffffff;
+}
+
+/* CARD */
+
+.dictionary-page-card {
+    position: relative;
+
+    width: 1279px;
+    min-height: 397px;
+
+    margin: 0 auto;
+
+    padding: 30px 38px 34px;
+
+    border-radius: 24px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(12, 43, 129, 0.95) 0%,
+        rgba(18, 90, 224, 0.92) 100%
+    );
+
+    box-shadow:
+        inset 0 0 30px rgba(255, 255, 255, 0.08),
+        0 12px 35px rgba(0, 0, 0, 0.22);
+
+    overflow: hidden;
+}
+
+/* GLOW */
+
+.dictionary-page-card::before {
+    content: "";
+
+    position: absolute;
+    left: -120px;
+    bottom: -60px;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background: rgba(82, 181, 255, 0.28);
+
+    filter: blur(90px);
+
+    pointer-events: none;
+}
+
+.dictionary-page-card::after {
+    content: "";
+
+    position: absolute;
+    right: -90px;
+    top: 40px;
+
+    width: 240px;
+    height: 240px;
+
+    border-radius: 50%;
+
+    background: rgba(98, 194, 255, 0.2);
+
+    filter: blur(70px);
+
+    pointer-events: none;
+}
+
+/* TABS */
+
+.dictionary-page-tabs {
+    display: flex;
+    align-items: center;
+}
+
+.dictionary-page-tab {
+    flex: 1;
+
+    height: 56px;
+
+    border: none;
+
+    border-radius: 16px 16px 0 0;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.dictionary-page-tab.active {
+    background: linear-gradient(180deg, #2196ff 0%, #1d5fd8 100%);
+
+    box-shadow:
+        inset 0 2px 10px rgba(255, 255, 255, 0.15),
+        0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* TOPBAR */
+
+.dictionary-page-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 22px;
+    margin-bottom: 24px;
+}
+
+/* ALL BTN */
+
+.dictionary-page-all-btn {
+    width: 106px;
+    height: 34px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+/* FONT CONTROLS */
+
+.dictionary-page-font-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.dictionary-page-font-controls button {
+    width: 22px;
+    height: 22px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: rgba(255, 255, 255, 0.14);
+
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+/* LETTERS */
+
+.dictionary-page-letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+
+    margin-bottom: 28px;
+}
+
+.dictionary-page-letters button {
+    width: 26px;
+    height: 26px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.dictionary-page-letters button:hover {
+    background: rgba(48, 203, 255, 0.4);
+
+    transform: translateY(-2px);
+}
+
+/* SEARCH */
+
+.dictionary-page-search {
+    width: 456px;
+    height: 52px;
+
+    margin: 0 auto 26px;
+
+    position: relative;
+}
+
+.dictionary-page-search input {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 68px 0 18px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    outline: none;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    color: #0f1f4d;
+}
+
+.dictionary-page-search input::placeholder {
+    color: #8a97b8;
+}
+
+/* SEARCH BTN */
+
+.dictionary-page-search-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+
+    transform: translateY(-50%);
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #0a8ff5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.dictionary-page-search-btn img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+/* ACTIONS */
+
+.dictionary-page-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.dictionary-page-actions button {
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.dictionary-page-actions img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
 }
 
 /*ძირითადი გვერდის რესფონსივე*/
