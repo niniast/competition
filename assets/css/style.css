@@ -1348,6 +1348,7 @@ body {
     background: #ffffff;
     border-radius: 16px 16px 0 0;
     padding-top: 14px;
+    padding-bottom: 70px;
 }
 /* FILTERS */
 
@@ -1468,7 +1469,6 @@ body {
 
 .events-grid {
     width: 1195px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 17px;
@@ -1499,9 +1499,12 @@ body {
     inset: 0;
     background: linear-gradient(
         180deg,
-        rgba(8, 17, 44, 0.15) 0%,
-        rgba(8, 17, 44, 0.82) 100%
+        rgba(31, 42, 55, 0.6) 0%,
+        rgba(31, 42, 55, 0.2) 100%
     );
+
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
 }
 
 /* BADGE */
@@ -1555,15 +1558,16 @@ body {
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 120%;
     color: #ffffff;
 }
 /* PAGINATION */
-
 .events-pagination {
     width: 1200px;
     height: 48px;
-    margin: 34px auto 0;
+
+    margin: 49px auto 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1590,7 +1594,7 @@ body {
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #10225d;
+    color: #000000;
     cursor: pointer;
     transition: 0.25s ease;
 }
