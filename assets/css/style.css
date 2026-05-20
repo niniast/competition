@@ -679,8 +679,9 @@ body {
     border-radius: 16px;
     background: linear-gradient(
         180deg,
-        rgba(31, 42, 55, 0.5) 0%,
-        rgba(31, 42, 55, 0.1) 100%
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(58, 58, 58, 0.825) 50%,
+        rgba(0, 0, 0, 0.1) 100%
     );
 
     overflow: hidden;
@@ -1607,40 +1608,50 @@ body {
 
 /*---------/////event detials page/////------*/
 /*blue section*/
-.event-blue-section {
+.event-inner-blue-section {
     padding: 40px 0 100px;
     background: #0d2d83;
 }
 
-.event-details-title {
-    width: 996px;
-    margin: 30px auto 30px;
+.event-inner-page-title {
+    margin-bottom: 27px;
+    margin-top: 25px;
+    text-align: center;
+    font-family: "FiraGO", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #30cbff;
+}
+
+.event-inner-title {
+    width: 930px;
+    margin: 0 auto 29px;
     text-align: center;
     font-family: "FiraGO", sans-serif;
     font-size: 20px;
     font-weight: 500;
-    line-height: 100%;
+    line-height: 110%;
     color: #ffffff;
-    text-wrap: balance;
+    word-break: break-word;
 }
-
-.event-details-line {
+.event-inner-line {
     width: 411px;
     height: 1px;
-    margin: 0 auto 40px;
+    margin: 0 auto 32px;
     background: #cce9f9;
 }
-.event-details-meta {
+.event-inner-meta {
     width: 1200px;
-    margin: 0 auto 10px;
-
+    margin: 0 auto 53px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.event-details-location,
-.event-details-date {
+.event-inner-location,
+.event-inner-date {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1650,16 +1661,15 @@ body {
     color: #ffffff;
 }
 
-.event-details-location img,
-.event-details-date img {
+.event-inner-location img,
+.event-inner-date img {
     width: 20px;
     height: 20px;
     object-fit: contain;
 }
 
-.event-details-badge {
+.event-inner-badge {
     position: relative;
-    left: -40px;
     height: 28px;
     padding: 0 18px;
     display: flex;
@@ -1667,7 +1677,7 @@ body {
     justify-content: center;
     border-radius: 8px;
     border: 1px solid #ffb901;
-    background: #1f4fb8;
+    background: #113190;
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 500;
