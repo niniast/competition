@@ -124,6 +124,7 @@ body {
     background: rgba(255, 255, 255, 0.12);
     transform: translateY(-1px);
 }
+
 .lang {
     display: flex;
     align-items: center;
@@ -168,7 +169,6 @@ body {
     opacity: 0.9;
 }
 
-/*--- NAVIGATION ---*/
 .nav {
     margin: 21px auto 0;
     display: flex;
@@ -199,6 +199,7 @@ body {
         box-shadow 0.35s ease,
         color 0.35s ease;
 }
+
 .nav a:hover {
     background: rgba(9, 42, 131, 0.9);
     box-shadow:
@@ -227,7 +228,6 @@ body {
     color: #ffffff;
 }
 
-/*main*/
 .main-title {
     max-width: 656px;
     width: 90%;
@@ -241,7 +241,6 @@ body {
     color: #ffffff;
 }
 
-/*--- CARDS ---*/
 .cards {
     margin-top: 44px;
     display: flex;
@@ -340,6 +339,7 @@ body {
     width: 385px;
     gap: 15px;
 }
+
 .tag {
     display: inline-flex;
     align-items: center;
@@ -393,6 +393,7 @@ body {
     flex-direction: column;
     padding: 0 26px;
 }
+
 .card-title {
     width: 178px;
     display: flex;
@@ -440,7 +441,6 @@ body {
     justify-content: center;
     border-radius: 8px;
     margin: 27px auto;
-
     background-image: url("../images/background.png");
     background-size: cover;
     background-position: center;
@@ -483,15 +483,13 @@ body {
     font-weight: 400;
     cursor: pointer;
     color: #000000;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     text-decoration: none;
 }
-/*--- BLUE SECTION ---*/
 
+/*--- BLUE SECTION ---*/
 .blue-section {
     position: relative;
     overflow: hidden;
@@ -694,6 +692,7 @@ body {
     border-radius: 15px;
     overflow: hidden;
 }
+
 .article-image {
     position: relative;
     width: 100%;
@@ -740,9 +739,7 @@ body {
     border: none;
     border-radius: 16px;
     background: rgba(64, 120, 190, 0.15);
-
     box-shadow: 0 2px 9px rgba(34, 60, 110, 0.1);
-
     backdrop-filter: blur(4px);
     color: #000000;
     font-family: "FiraGO", sans-serif;
@@ -970,7 +967,6 @@ body {
     inset: 0;
 }
 
-/* --- BADGES --- */
 .event-badge {
     position: absolute;
     top: -10px;
@@ -995,8 +991,6 @@ body {
     color: black;
 }
 
-/* --- DATE --- */
-
 .event-date {
     position: absolute;
     top: 12px;
@@ -1007,8 +1001,6 @@ body {
     font-weight: 600;
     color: #ffffff;
 }
-
-/* --- TITLE --- */
 
 .event-card-title {
     position: absolute;
@@ -1023,8 +1015,6 @@ body {
     color: #ffffff;
     text-align: center;
 }
-
-/* --- BUTTON --- */
 
 .event-button {
     width: 183px;
@@ -1054,7 +1044,6 @@ body {
 }
 
 /* ფონის ხაზები */
-
 .footer-overlay {
     position: absolute;
     inset: 0;
@@ -1067,14 +1056,12 @@ body {
 .footer-container {
     position: relative;
     z-index: 2;
-
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
 /* --- COLUMNS --- */
-
 .footer-column {
     display: flex;
     flex-direction: column;
@@ -1088,8 +1075,6 @@ body {
     color: #0091e2;
 }
 
-/* --- LINKS --- */
-
 .footer-links {
     display: flex;
     flex-direction: column;
@@ -1101,7 +1086,6 @@ body {
     font-family: "FiraGO", sans-serif;
     font-weight: 400;
     font-size: 14px;
-
     color: #ffffff;
     text-decoration: none;
     transition: 0.25s ease;
@@ -1110,20 +1094,20 @@ body {
 /*დაადარე ფიგმას.footer-links a:hover {
     color: #07aee6;
 }*/
+
 .footer-modules {
     min-width: 212px;
 }
+
 .footer-container {
     position: relative;
     z-index: 2;
-
     display: flex;
     align-items: flex-start;
-
     gap: 90px;
 }
-/* --- CENTER --- */
 
+/* --- CENTER --- */
 .footer-center {
     display: flex;
     flex-direction: column;
@@ -1135,6 +1119,7 @@ body {
     width: 75px;
     margin-bottom: 28px;
 }
+
 .footer .socials {
     display: flex;
     align-items: center;
@@ -1180,7 +1165,6 @@ body {
 }
 
 /* --- CONTACT --- */
-
 .footer-contact {
     min-width: 290px;
 }
@@ -1212,7 +1196,6 @@ body {
     text-decoration: none;
     transition: 0.25s ease;
 }
-/* --- FORM --- */
 
 .footer-form {
     margin-top: 18px;
@@ -1272,6 +1255,7 @@ body {
     background: #ffffff;
     opacity: 0.3;
 }
+
 .footer-bottom {
     position: relative;
     z-index: 2;
@@ -1301,7 +1285,6 @@ body {
 }
 
 /* TABS */
-
 .events-page-tabs {
     position: relative;
     z-index: 3;
@@ -1330,7 +1313,6 @@ body {
 }
 
 /* ACTIVE TAB */
-
 .events-page-tab--active {
     background: linear-gradient(180deg, #1167d9 0%, #0a4697 100%);
     height: 70px;
@@ -1351,8 +1333,8 @@ body {
     padding-top: 14px;
     padding-bottom: 70px;
 }
-/* FILTERS */
 
+/* FILTERS */
 .events-page-filters {
     width: 1201px;
     margin: 0 auto 73px;
@@ -1360,9 +1342,9 @@ body {
     align-items: center;
     gap: 47px;
 }
+
 /* -FIELDS- */
 /*  SELECT */
-
 .events-page-field1 {
     position: relative;
     width: 576px;
@@ -1439,6 +1421,7 @@ body {
 .events-page-search-input::placeholder {
     color: #a1afcf;
 }
+
 .events-search-btn {
     width: 83px;
     height: 41px;
@@ -1461,13 +1444,11 @@ body {
 }
 
 /* cards */
-
 .events-grid-section {
     padding: 30px 0;
 }
 
 /* GRID */
-
 .events-grid {
     width: 1195px;
     display: grid;
@@ -1562,13 +1543,12 @@ body {
     line-height: 120%;
     color: #ffffff;
 }
+
 /* PAGINATION */
 .events-pagination {
     width: 1200px;
     height: 48px;
-
     margin: 49px auto 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1576,7 +1556,6 @@ body {
 }
 
 /* LINES */
-
 .events-pagination-line {
     flex: 1;
     width: 411px;
@@ -1585,7 +1564,6 @@ body {
 }
 
 /* BUTTON */
-
 .events-pagination-btn {
     width: 303px;
     height: 48px;
@@ -1606,7 +1584,9 @@ body {
     background: #ffffff;
 }
 
-/*---------/////event detials page/////------*/
+/* =========================
+   EVENTS  INNER PAGE
+========================= */
 /*blue section*/
 .event-inner-blue-section {
     padding: 40px 0 100px;
@@ -1636,12 +1616,14 @@ body {
     color: #ffffff;
     word-break: break-word;
 }
+
 .event-inner-line {
     width: 411px;
     height: 1px;
     margin: 0 auto 32px;
     background: #cce9f9;
 }
+
 .event-inner-meta {
     width: 1200px;
     margin: 0 auto 53px;
@@ -1692,7 +1674,6 @@ body {
 }
 
 /* OVERLAP CARD */
-
 .event-inner-card {
     width: 1200px;
     top: -80px;
@@ -1712,10 +1693,6 @@ body {
     color: #000000;
 }
 
-/* =========================
-   EVENT DIVIDER
-========================= */
-
 .event-inner-divider {
     width: 1200px;
     margin: 40px auto 0;
@@ -1731,7 +1708,6 @@ body {
     background: #cce9f9;
 }
 
-/* BUTTON */
 .event-inner-btn {
     width: 303px;
     height: 48px;
@@ -1750,14 +1726,16 @@ body {
 .event-inner-btn:hover {
     transform: translateY(-2px);
 }
+
 /* =========================
    NEWS PAGE
 ========================= */
-
 .news-page-section {
-    padding-top: 48px;
+    padding-top: 25px;
 }
+
 .news-page-grid-section {
+    width: 100%;
     background: #ffffff;
 }
 
@@ -1767,6 +1745,7 @@ body {
     grid-template-columns: repeat(4, 281px);
     justify-content: center;
     gap: 25px;
+    margin-top: 32px;
     margin-bottom: 40px;
 }
 
@@ -1774,12 +1753,22 @@ body {
 .news-page-card {
     display: flex;
     flex-direction: column;
+
     width: 281px;
-    height: 278px;
-    background: #dddbdb;
+    height: 308px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(31, 42, 55, 0.5) 0%,
+        rgba(31, 42, 55, 0.1) 45%,
+        rgba(31, 42, 55, 0.5) 100%
+    );
+
     border-radius: 16px;
     overflow: hidden;
+
     box-shadow: 0 4px 18px rgba(202, 221, 240, 0.35);
+
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
@@ -1819,7 +1808,6 @@ body {
 }
 
 /* CONTENT */
-
 .news-page-card-content {
     padding: 14px 14px 18px;
     flex: 1;
@@ -1830,15 +1818,13 @@ body {
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
-
     color: #1f2937;
 }
 
 /* MORE WRAPPER */
-
 .news-page-more-wrapper {
     width: 1200px;
-    margin: 0 auto;
+    padding-bottom: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1846,7 +1832,6 @@ body {
 }
 
 /* LINES */
-
 .news-page-more-line {
     flex: 1;
     height: 1px;
@@ -1854,14 +1839,14 @@ body {
 }
 
 /* BUTTON */
-
 .news-page-more-btn {
     width: 303px;
     height: 48px;
     border: none;
     border-radius: 16px;
-    background: linear-gradient(180deg, #dbeafe 0%, #bfdbfe 100%);
-
+    background: rgba(64, 120, 190, 0.15);
+    box-shadow: 0 2px 9px rgba(34, 60, 110, 0.1);
+    color: #10225d;
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -1880,23 +1865,30 @@ body {
 /* =========================
    NEWS INNER PAGE
 ========================= */
-
+.news-inner-main-title {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+    font-family: "FiraGO", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #30cbff;
+}
 .news-inner-section {
-    padding: 48px 0 80px;
+    padding: 34px 0 30px;
     background: #ffffff;
 }
 
-/* =========================
-   TOP TITLE
-========================= */
-
+/* TOP TITLE */
 .news-inner-top {
     width: 1200px;
-    margin: 0 auto 24px;
+    margin: 0 auto 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 37px;
 }
 
 .news-inner-line {
@@ -1914,59 +1906,62 @@ body {
     line-height: 100%;
     color: #02103a;
 }
-/* =========================
-   WRAPPER
-========================= */
 
+/* GALLERY WRAPPER */
 .news-inner-gallery-wrapper {
+    position: relative;
     width: 1304px;
     margin: 0 auto 32px;
     padding: 18px 28px 28px;
     background: #ffffff;
     display: flex;
     flex-direction: column;
-    gap: 18px;
 }
 
-/* META */
-
+/*META*/
 .news-inner-meta {
-    padding: 0 38px; /* ეს ზრდის შიგნით შეწევას */
-    width: 100%;
+    position: absolute;
+    top: 52px;
+    left: 68px;
+    right: 68px;
+    z-index: 5;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* META */
-
+/* DATE */
 .news-inner-date {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 2px;
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 500;
+    line-height: 100%;
     color: #072375;
 }
 
 .news-inner-date img {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
 }
 
+/* BADGE */
 .news-inner-badge {
     height: 32px;
-    padding: 0 18px;
+    padding: 0 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
     border: 1px solid #ffb901;
+    border-radius: 8px;
     background: #ffffff;
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 500;
+    line-height: 100%;
     color: #072375;
 }
 
@@ -1976,13 +1971,17 @@ body {
 
 .news-inner-gallery {
     width: 100%;
+
+    margin-top: 34px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     gap: 20px;
 }
 
-/* CENTER ROW */
+/* IMAGES ROW */
 
 .news-inner-gallery-grid {
     display: flex;
@@ -1994,8 +1993,11 @@ body {
 
 .news-inner-gallery-item img {
     display: block;
+
     object-fit: cover;
+
     border-radius: 8px;
+
     transition:
         width 0.35s ease,
         height 0.35s ease,
@@ -2003,7 +2005,7 @@ body {
         opacity 0.35s ease;
 }
 
-/* SMALL IMAGES */
+/* SIDE IMAGES */
 
 .news-inner-gallery-item:not(.active) img {
     width: 183px;
@@ -2017,21 +2019,27 @@ body {
 .news-inner-gallery-item.active img {
     width: 386px;
     height: 430px;
-    border-radius: 8px;
 }
 
-/* ARROWS */
+/* =========================
+   ARROWS
+========================= */
 
 .news-inner-arrow {
     width: 42px;
     height: 42px;
+
     border: none;
     background: transparent;
+
     padding: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     cursor: pointer;
+
     transition:
         transform 0.25s ease,
         opacity 0.25s ease;
@@ -2040,42 +2048,56 @@ body {
 .news-inner-arrow img {
     width: 42px;
     height: 42px;
+
     object-fit: contain;
+
     display: block;
 }
+
 .left-arrow img {
     transform: rotate(180deg);
 }
+
 .news-inner-arrow:hover {
     transform: scale(1.08);
     opacity: 0.85;
 }
-
 /* =========================
    CONTENT CARD
 ========================= */
 
 .news-inner-content-card {
     width: 1140px;
-    margin: 0 auto 40px;
-    padding: 28px 30px;
+
+    margin: 0 auto 48px;
+
+    padding: 22px 18px 26px;
+
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.9);
+
+    background: rgba(255, 255, 255, 0.92);
+
     box-shadow: 0 4px 27px rgba(202, 221, 240, 0.3);
 }
+
+/* PARAGRAPHS */
 
 .news-inner-content-card p {
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 100%;
+
     color: #000000;
+
+    text-align: left;
 }
+
+/* SPACE BETWEEN PARAGRAPHS */
 
 .news-inner-content-card p + p {
-    margin-top: 20px;
+    margin-top: 18px;
 }
-
 /* =========================
    SOCIAL
 ========================= */
