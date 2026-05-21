@@ -255,12 +255,21 @@ body {
     width: 90%;
     margin: 39px auto 0;
     font-family: "FiraGO", sans-serif;
-    text-transform: uppercase;
+
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
     text-align: center;
     color: #ffffff;
+}
+.uppercase {
+    font-family: "FiraGO", sans-serif;
+    text-transform: uppercase;
+    font-feature-settings:
+        "case" 1,
+        "c2sc" 1,
+        "smcp" 1;
+    letter-spacing: 0.02em;
 }
 
 .cards {
@@ -2156,7 +2165,7 @@ body {
 ========================= */
 
 .dictionary-page-section {
-    padding: 56px 0 80px;
+    padding: 39px 0 137px;
     position: relative;
     overflow: hidden;
 }
@@ -2169,98 +2178,36 @@ body {
 /* TITLE */
 
 .dictionary-page-title {
-    margin-bottom: 18px;
-
+    margin-bottom: 22px;
     text-align: center;
-
     font-family: "FiraGO", sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 100%;
-
     color: #30cbff;
 }
 
 /* DESCRIPTION */
 
 .dictionary-page-description {
-    margin-bottom: 22px;
-
-    text-align: center;
-
+    margin-bottom: 39px;
+    text-align: left;
+    margin-left: 40px;
     font-family: "FiraGO", sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 100%;
-
-    color: #ffffff;
+    font-style: italic;
+    color: #eef6ff;
 }
 
 /* CARD */
 
+/* OUTER CARD */
 .dictionary-page-card {
     position: relative;
-
-    width: 1279px;
-    min-height: 397px;
-
+    width: 1211px;
     margin: 0 auto;
-
-    padding: 30px 38px 34px;
-
-    border-radius: 24px;
-
-    background: linear-gradient(
-        180deg,
-        rgba(12, 43, 129, 0.95) 0%,
-        rgba(18, 90, 224, 0.92) 100%
-    );
-
-    box-shadow:
-        inset 0 0 30px rgba(255, 255, 255, 0.08),
-        0 12px 35px rgba(0, 0, 0, 0.22);
-
-    overflow: hidden;
-}
-
-/* GLOW */
-
-.dictionary-page-card::before {
-    content: "";
-
-    position: absolute;
-    left: -120px;
-    bottom: -60px;
-
-    width: 420px;
-    height: 420px;
-
-    border-radius: 50%;
-
-    background: rgba(82, 181, 255, 0.28);
-
-    filter: blur(90px);
-
-    pointer-events: none;
-}
-
-.dictionary-page-card::after {
-    content: "";
-
-    position: absolute;
-    right: -90px;
-    top: 40px;
-
-    width: 240px;
-    height: 240px;
-
-    border-radius: 50%;
-
-    background: rgba(98, 194, 255, 0.2);
-
-    filter: blur(70px);
-
-    pointer-events: none;
 }
 
 /* TABS */
@@ -2268,95 +2215,113 @@ body {
 .dictionary-page-tabs {
     display: flex;
     align-items: center;
+    gap: 40px;
 }
 
 .dictionary-page-tab {
     flex: 1;
-
     height: 56px;
-
     border: none;
-
     border-radius: 16px 16px 0 0;
-
     background: rgba(255, 255, 255, 0.08);
-
     font-family: "FiraGO", sans-serif;
     font-size: 14px;
     font-weight: 500;
-
     color: #ffffff;
-
     cursor: pointer;
-
     transition: 0.3s ease;
 }
 
 .dictionary-page-tab.active {
-    background: linear-gradient(180deg, #2196ff 0%, #1d5fd8 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(58, 174, 255, 0.95) 0%,
+        rgba(37, 117, 255, 0.92) 100%
+    );
 
     box-shadow:
-        inset 0 2px 10px rgba(255, 255, 255, 0.15),
-        0 6px 16px rgba(0, 0, 0, 0.18);
+        inset 0 2px 14px rgba(255, 255, 255, 0.28),
+        0 0 18px rgba(73, 181, 255, 0.35),
+        0 6px 18px rgba(0, 0, 0, 0.2);
+
+    color: #ffffff;
+}
+
+/* INNER CARD */
+.dictionary-page-inner {
+    position: relative;
+    width: 1213px;
+    min-height: 311px;
+    margin: -2px auto 0;
+    padding: 22px 28px 26px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #061d61 0%, #0c3da8 100%);
+    box-shadow:
+        0 4px 27px rgba(202, 221, 240, 0.3),
+        inset 0 0 24px rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+/* CONTENT */
+.dictionary-page-content {
+    width: 842px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 /* TOPBAR */
-
 .dictionary-page-topbar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    margin-top: 22px;
-    margin-bottom: 24px;
+    margin-bottom: 3cqb;
 }
-
 /* ALL BTN */
-
 .dictionary-page-all-btn {
-    width: 106px;
-    height: 34px;
-
+    min-width: 131px;
+    height: 39px;
+    padding: 0 10px;
     border: none;
-    border-radius: 10px;
-
-    background: rgba(255, 255, 255, 0.15);
-
+    border-radius: 8px;
+    background: linear-gradient(90deg, #0c3ba5 0%, rgba(7, 174, 230, 0.6) 100%);
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
     font-family: "FiraGO", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
     color: #ffffff;
-
     cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
-
 /* FONT CONTROLS */
 
 .dictionary-page-font-controls {
     display: flex;
     align-items: center;
-    gap: 12px;
-
+    width: 178px;
+    gap: 14px;
     font-family: "FiraGO", sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
-
     color: #ffffff;
 }
 
 .dictionary-page-font-controls button {
-    width: 22px;
-    height: 22px;
-
+    width: 24px;
+    height: 24px;
     border: none;
-    border-radius: 6px;
-
-    background: rgba(255, 255, 255, 0.14);
-
-    color: #ffffff;
-
+    border-radius: 4px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: 0.25s ease;
 }
 
 /* LETTERS */
@@ -2365,28 +2330,23 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
-
-    margin-bottom: 28px;
+    width: 1136px;
+    gap: 4px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .dictionary-page-letters button {
-    width: 26px;
-    height: 26px;
-
+    width: 30px;
+    height: 39px;
     border: none;
-    border-radius: 6px;
-
+    border-radius: 4px;
     background: rgba(255, 255, 255, 0.12);
-
     font-family: "FiraGO", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-
+    font-size: 16px;
+    font-weight: 700;
     color: #ffffff;
-
     cursor: pointer;
-
     transition:
         transform 0.25s ease,
         background 0.25s ease;
@@ -2394,39 +2354,30 @@ body {
 
 .dictionary-page-letters button:hover {
     background: rgba(48, 203, 255, 0.4);
-
     transform: translateY(-2px);
 }
 
 /* SEARCH */
 
 .dictionary-page-search {
-    width: 456px;
-    height: 52px;
-
-    margin: 0 auto 26px;
-
+    width: 842px;
+    height: 67px;
+    margin: 0 auto 32px;
     position: relative;
 }
 
 .dictionary-page-search input {
     width: 100%;
     height: 100%;
-
     padding: 0 68px 0 18px;
-
     border: none;
-    border-radius: 14px;
-
+    border-radius: 15px;
     background: #ffffff;
-
     outline: none;
-
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-
-    color: #0f1f4d;
+    color: #00000099;
 }
 
 .dictionary-page-search input::placeholder {
@@ -2434,33 +2385,29 @@ body {
 }
 
 /* SEARCH BTN */
-
 .dictionary-page-search-btn {
     position: absolute;
     top: 50%;
     right: 10px;
-
     transform: translateY(-50%);
-
-    width: 36px;
-    height: 36px;
-
+    width: 58px;
+    height: 41px;
     border: none;
-    border-radius: 10px;
-
-    background: #0a8ff5;
-
+    border-radius: 11px;
+    background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .dictionary-page-search-btn img {
-    width: 18px;
-    height: 18px;
-
+    width: 31px;
+    height: 31px;
     object-fit: contain;
 }
 
@@ -2470,20 +2417,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 18px;
+    gap: 25px;
 }
 
 .dictionary-page-actions button {
     border: none;
     background: transparent;
-
     cursor: pointer;
 }
 
 .dictionary-page-actions img {
-    width: 18px;
-    height: 18px;
-
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }
 
