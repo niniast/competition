@@ -2469,7 +2469,7 @@ body {
 .dictionary-inner-category-btn {
     height: 39px;
     padding: 0 22px;
-    border: 1px solid #1163d399;
+    border: #ffffff03;
     border-radius: 8px;
     background: transparent;
     display: flex;
@@ -2483,8 +2483,7 @@ body {
 }
 
 .dictionary-inner-category-btn.active {
-    background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
-    border: none;
+    border: 1px solid #1163d399;
 }
 
 /* LETTERS */
@@ -2506,7 +2505,6 @@ body {
 }
 
 /* SEARCH */
-
 .dictionary-inner-search {
     position: relative;
     width: 842px;
@@ -2518,50 +2516,39 @@ body {
     height: 100%;
     padding: 0 50px 0 22px;
     border: none;
-    border-radius: 16px;
-
+    border-radius: 15px;
     background: #ffffff;
-
     outline: none;
-
     font-family: "FiraGO", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
-
-    color: #1d2b5b;
+    color: #00000099;
 }
 
 .dictionary-inner-search input::placeholder {
-    color: #9aa7c3;
+    color: #00000099;
 }
 
 /* SEARCH BTN */
-
 .dictionary-inner-search-btn {
     position: absolute;
     top: 50%;
-    right: 22px;
-
+    right: 38px;
     transform: translateY(-50%);
-
-    width: 41px;
+    width: 58px;
     height: 41px;
-
     border: none;
     border-radius: 11px;
-
     background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
 }
 
 .dictionary-inner-search-btn img {
-    width: 18px;
-    height: 18px;
+    width: 31px;
+    height: 31px;
 }
 
 /* CARD */
