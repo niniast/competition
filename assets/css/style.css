@@ -2432,6 +2432,299 @@ body {
     object-fit: contain;
 }
 
+/* =========================
+   DICTIONARY INNER PAGE
+========================= */
+
+.dictionary-inner-page {
+    padding: 41px 0;
+}
+
+/* CONTAINER */
+.dictionary-inner-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* SEARCH WRAPPER */
+.dictionary-inner-search-wrapper {
+    width: 860px;
+    margin: 0 auto;
+}
+
+.dictionary-inner-top-row {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    margin-bottom: 38px;
+}
+
+.dictionary-inner-categories {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* CATEGORY BUTTON */
+.dictionary-inner-category-btn {
+    height: 39px;
+    padding: 0 22px;
+    border: 1px solid #1163d399;
+    border-radius: 8px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.dictionary-inner-category-btn.active {
+    background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
+    border: none;
+}
+
+/* LETTERS */
+.dictionary-inner-letters {
+    width: 645px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dictionary-inner-letters button {
+    border: none;
+    background: transparent;
+    font-family: "FiraGO", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #07aee6;
+    cursor: pointer;
+}
+
+/* SEARCH */
+
+.dictionary-inner-search {
+    position: relative;
+    width: 842px;
+    height: 67px;
+}
+
+.dictionary-inner-search input {
+    width: 100%;
+    height: 100%;
+    padding: 0 50px 0 22px;
+    border: none;
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    outline: none;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #1d2b5b;
+}
+
+.dictionary-inner-search input::placeholder {
+    color: #9aa7c3;
+}
+
+/* SEARCH BTN */
+
+.dictionary-inner-search-btn {
+    position: absolute;
+    top: 50%;
+    right: 22px;
+
+    transform: translateY(-50%);
+
+    width: 41px;
+    height: 41px;
+
+    border: none;
+    border-radius: 11px;
+
+    background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.dictionary-inner-search-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+/* CARD */
+
+.dictionary-inner-card {
+    width: 1200px;
+
+    padding: 40px 38px;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* CARD TOP */
+
+.dictionary-inner-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 34px;
+}
+
+/* TITLE */
+
+.dictionary-inner-title {
+    width: 305px;
+    height: 30px;
+
+    background: #dff2ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #3b6e9c;
+}
+
+/* ICON BTNS */
+
+.dictionary-inner-back-btn,
+.dictionary-inner-close-btn {
+    border: none;
+    background: transparent;
+
+    font-size: 28px;
+
+    color: #000000;
+
+    cursor: pointer;
+}
+
+/* CONTENT */
+
+.dictionary-inner-content p {
+    margin-bottom: 28px;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    line-height: 190%;
+
+    color: #4a4a4a;
+}
+
+.dictionary-inner-content h3 {
+    margin-bottom: 18px;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    color: #2677c9;
+}
+
+/* DIVIDER */
+
+.dictionary-inner-divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 30px 0;
+
+    background: #dfeaf5;
+}
+
+/* FOOTER */
+
+.dictionary-inner-footer {
+    margin-top: 50px;
+    padding-top: 24px;
+
+    border-top: 1px solid #dfeaf5;
+
+    text-align: center;
+}
+
+/* SOURCE */
+
+.dictionary-inner-source {
+    margin-bottom: 10px;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #4f5d7d;
+}
+
+.dictionary-inner-footer a {
+    font-family: "FiraGO", sans-serif;
+    font-size: 12px;
+
+    color: #4c87d9;
+}
+
+/* ACTIONS */
+
+.dictionary-inner-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+
+    margin: 22px 0;
+}
+
+.dictionary-inner-actions button {
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+/* TAGS */
+
+.dictionary-inner-tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dictionary-inner-tags button {
+    height: 32px;
+    padding: 0 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #f1f6fb;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 12px;
+
+    color: #5b6f92;
+
+    cursor: pointer;
+}
 /*ძირითადი გვერდის რესფონსივე*/
 /* =========================================
    RESPONSIVE
