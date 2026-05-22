@@ -2509,6 +2509,7 @@ body {
     position: relative;
     width: 842px;
     height: 67px;
+    margin-bottom: 48px;
 }
 
 .dictionary-inner-search input {
@@ -2552,48 +2553,75 @@ body {
 }
 
 /* CARD */
-
 .dictionary-inner-card {
     width: 1200px;
-
     padding: 40px 38px;
-
     border-radius: 16px;
-
     background: #ffffff;
-
     box-shadow: 0 3px 14px rgba(0, 0, 0, 0.15);
 }
 
 /* CARD TOP */
-
 .dictionary-inner-card-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    margin-bottom: 34px;
+    margin-bottom: 40px;
 }
 
 /* TITLE */
 
 .dictionary-inner-title {
-    width: 305px;
-    height: 30px;
+    width: 470px;
+    height: 45px;
 
-    background: #dff2ff;
+    background-image: url("../images/dictionary-inner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: "DM Giorgi", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #155fad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dictionary-inner-back-btn,
+.dictionary-inner-close-btn {
+    width: 34px;
+    height: 34px;
+
+    border: none;
+    background: transparent;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
+    cursor: pointer;
 
-    color: #3b6e9c;
+    padding: 0;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
 }
 
+.dictionary-inner-back-btn img,
+.dictionary-inner-close-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.dictionary-inner-back-btn:hover,
+.dictionary-inner-close-btn:hover {
+    transform: scale(1.08);
+    opacity: 0.8;
+}
 /* ICON BTNS */
 
 .dictionary-inner-back-btn,
