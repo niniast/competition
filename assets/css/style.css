@@ -2849,6 +2849,234 @@ body {
     background: #dfeefe;
     transform: translateY(-1px);
 }
+
+/* =========================================
+   DICTIONARY-ALL-PAGE
+========================================= */
+/* =========================================
+   DICTIONARY ALL
+========================================= */
+
+.dictionary-all {
+    padding: 70px 0 120px;
+    background: #07257a;
+}
+
+.dictionary-all-container {
+    width: 1199px;
+    margin: 0 auto;
+}
+
+/* SEARCH AREA */
+
+.dictionary-all-search-wrapper {
+    width: 100%;
+    padding: 28px 24px 30px;
+    border-radius: 20px;
+    background: rgba(16, 96, 206, 0.15);
+    box-shadow: 0 4px 26px rgba(7, 174, 230, 0.5);
+    backdrop-filter: blur(12px);
+    margin-bottom: 24px;
+}
+
+.dictionary-all-search-text {
+    margin-bottom: 22px;
+    text-align: center;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.dictionary-all-search-box {
+    width: 640px;
+    height: 56px;
+
+    margin: 0 auto 24px;
+
+    padding: 0 12px 0 24px;
+
+    border-radius: 14px;
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dictionary-all-search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    color: #10225d;
+}
+
+.dictionary-all-search-input::placeholder {
+    color: #7f8ca8;
+}
+
+.dictionary-all-search-btn {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #0a6dff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.dictionary-all-search-btn:hover {
+    transform: scale(1.05);
+}
+
+.dictionary-all-search-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+/* LETTERS */
+
+.dictionary-all-letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+
+    margin-bottom: 24px;
+}
+
+.dictionary-all-letters button {
+    width: 28px;
+    height: 28px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.dictionary-all-letters button:hover {
+    background: #0a6dff;
+    transform: translateY(-2px);
+}
+
+/* SHOW BTN */
+
+.dictionary-all-show-btn {
+    display: block;
+    margin: 0 auto;
+
+    width: 132px;
+    height: 34px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #0a6dff;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.dictionary-all-show-btn:hover {
+    transform: scale(1.03);
+}
+
+/* BIG CARD */
+
+.dictionary-all-card {
+    width: 100%;
+
+    padding: 26px 34px 34px;
+
+    border-radius: 20px;
+
+    background: rgba(16, 96, 206, 0.15);
+
+    box-shadow: 0 4px 26px rgba(7, 174, 230, 0.5);
+
+    backdrop-filter: blur(12px);
+}
+
+/* TITLE */
+
+.dictionary-all-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    margin-bottom: 42px;
+}
+
+.dictionary-all-card-title span {
+    width: 115px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.dictionary-all-card-title h2 {
+    font-family: "FiraGO", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* GRID */
+
+.dictionary-all-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 90px;
+    row-gap: 22px;
+}
+
+/* ITEM */
+
+.dictionary-all-item {
+    font-family: "FiraGO", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: #ffffff;
+
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.dictionary-all-item:hover {
+    color: #30cbff;
+    transform: translateX(4px);
+}
+
 /*ძირითადი გვერდის რესფონსივე*/
 /* =========================================
    RESPONSIVE
