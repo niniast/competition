@@ -2569,41 +2569,18 @@ body {
     margin-bottom: 40px;
 }
 
-/* TITLE */
-
-.dictionary-inner-title {
-    width: 470px;
-    height: 45px;
-
-    background-image: url("../images/dictionary-inner-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    font-family: "DM Giorgi", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #155fad;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .dictionary-inner-back-btn,
 .dictionary-inner-close-btn {
     width: 34px;
     height: 34px;
-
+    flex-shrink: 0;
     border: none;
     background: transparent;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
-
     padding: 0;
-
     transition:
         transform 0.25s ease,
         opacity 0.25s ease;
@@ -2611,8 +2588,8 @@ body {
 
 .dictionary-inner-back-btn img,
 .dictionary-inner-close-btn img {
-    width: 100%;
-    height: 100%;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
     display: block;
 }
@@ -2622,123 +2599,255 @@ body {
     transform: scale(1.08);
     opacity: 0.8;
 }
-/* ICON BTNS */
+/* TITLE */
 
-.dictionary-inner-back-btn,
-.dictionary-inner-close-btn {
-    border: none;
-    background: transparent;
-
-    font-size: 28px;
-
-    color: #000000;
-
-    cursor: pointer;
-}
-
-/* CONTENT */
-
-.dictionary-inner-content p {
-    margin-bottom: 28px;
-
-    font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    line-height: 190%;
-
-    color: #4a4a4a;
-}
-
-.dictionary-inner-content h3 {
-    margin-bottom: 18px;
-
-    font-family: "FiraGO", sans-serif;
+.dictionary-inner-title {
+    width: 470px;
+    height: 45px;
+    background-image: url("../images/dictionary-inner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "DM Giorgi", sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
+    color: #155fad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    color: #2677c9;
+/*content*/
+.dictionary-inner-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* SECTION */
+
+.dictionary-inner-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    min-width: 0;
+}
+/*text*/
+.dictionary-inner-section-text {
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #1f2a37;
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+/* HEAD */
+
+.dictionary-inner-section-head {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* TITLE */
+
+.dictionary-inner-section-title {
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #155fad;
+    white-space: nowrap;
 }
 
 /* DIVIDER */
 
 .dictionary-inner-divider {
-    width: 100%;
+    flex: 1;
     height: 1px;
-
-    margin: 30px 0;
-
-    background: #dfeaf5;
+    background: #cce9f9;
 }
 
 /* FOOTER */
-
 .dictionary-inner-footer {
-    margin-top: 50px;
-    padding-top: 24px;
-
-    border-top: 1px solid #dfeaf5;
-
-    text-align: center;
+    margin-top: 40px;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* SOURCE */
+.dictionary-inner-source-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
 
 .dictionary-inner-source {
-    margin-bottom: 10px;
-
+    position: relative;
+    margin-bottom: 16px;
+    gap: 37px;
     font-family: "FiraGO", sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
-
-    color: #4f5d7d;
+    line-height: 100%;
+    color: #1f2a37;
 }
 
-.dictionary-inner-footer a {
+/* LINES */
+
+.dictionary-inner-source::before,
+.dictionary-inner-source::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 537px;
+    height: 1px;
+    background: #cce9f9;
+}
+
+.dictionary-inner-source::before {
+    right: calc(100% + 38px);
+}
+
+.dictionary-inner-source::after {
+    left: calc(100% + 38px);
+}
+
+/* LINK */
+
+.dictionary-inner-source-block a {
+    width: 1200px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cce9f9;
     font-family: "FiraGO", sans-serif;
-    font-size: 12px;
-
-    color: #4c87d9;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #1f2a37;
+    text-decoration: underline;
 }
 
-/* ACTIONS */
+/* =========================
+   ACTIONS
+========================= */
 
 .dictionary-inner-actions {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 14px;
-
-    margin: 22px 0;
+    gap: 25px;
+    margin-bottom: 40px;
 }
 
 .dictionary-inner-actions button {
+    width: 24px;
+    height: 24px;
     border: none;
     background: transparent;
-
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
 }
 
-/* TAGS */
+.dictionary-inner-actions button img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.dictionary-inner-actions button:hover {
+    transform: scale(1.08);
+    opacity: 0.8;
+}
+
+/* =========================
+   TAGS TITLE
+========================= */
+
+.dictionary-inner-tags-title {
+    position: relative;
+    margin-bottom: 40px;
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #02103a;
+}
+
+.dictionary-inner-tags-title::before,
+.dictionary-inner-tags-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 468px;
+    height: 1px;
+
+    background: #cce9f9;
+}
+
+.dictionary-inner-tags-title::before {
+    right: calc(100% + 37px);
+}
+
+.dictionary-inner-tags-title::after {
+    left: calc(100% + 37px);
+}
+
+/* =========================
+   TAGS
+========================= */
 
 .dictionary-inner-tags {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 94px;
 }
 
 .dictionary-inner-tags button {
-    height: 32px;
-    padding: 0 18px;
-
+    height: 46px;
+    padding: 0 26px;
     border: none;
-    border-radius: 8px;
-
-    background: #f1f6fb;
-
+    border-radius: 16px;
+    background: #c8e6fd80;
+    box-shadow: #223c6e33;
     font-family: "FiraGO", sans-serif;
-    font-size: 12px;
-
-    color: #5b6f92;
-
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #1f2a37;
     cursor: pointer;
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+.dictionary-inner-tags button a {
+    text-decoration: none;
+}
+
+.dictionary-inner-tags button:hover {
+    background: #dfeefe;
+    transform: translateY(-1px);
 }
 /*ძირითადი გვერდის რესფონსივე*/
 /* =========================================
