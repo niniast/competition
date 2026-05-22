@@ -2853,12 +2853,8 @@ body {
 /* =========================================
    DICTIONARY-ALL-PAGE
 ========================================= */
-/* =========================================
-   DICTIONARY ALL
-========================================= */
-
 .dictionary-all {
-    padding: 70px 0 120px;
+    padding: 42px 0 120px;
     background: #07257a;
 }
 
@@ -2867,39 +2863,35 @@ body {
     margin: 0 auto;
 }
 
+.dictionary-all-search-text {
+    margin-bottom: 34px;
+    text-align: center;
+    font-family: "FiraGO", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #30cbff;
+}
+
 /* SEARCH AREA */
 
 .dictionary-all-search-wrapper {
-    width: 100%;
+    width: 1200px;
+    height: 246px;
     padding: 28px 24px 30px;
-    border-radius: 20px;
+    border-radius: 16px;
     background: rgba(16, 96, 206, 0.15);
     box-shadow: 0 4px 26px rgba(7, 174, 230, 0.5);
-    backdrop-filter: blur(12px);
-    margin-bottom: 24px;
-}
-
-.dictionary-all-search-text {
+    backdrop-filter: blur(32px);
     margin-bottom: 22px;
-    text-align: center;
-
-    font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #ffffff;
 }
 
 .dictionary-all-search-box {
-    width: 640px;
-    height: 56px;
-
+    width: 842px;
+    height: 67px;
     margin: 0 auto 24px;
-
     padding: 0 12px 0 24px;
-
     border-radius: 14px;
     background: #ffffff;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2913,26 +2905,24 @@ body {
 
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
-    color: #10225d;
+    font-weight: 400;
+    color: #00000099;
 }
 
 .dictionary-all-search-input::placeholder {
-    color: #7f8ca8;
+    color: #00000099;
 }
 
 .dictionary-all-search-btn {
-    width: 42px;
-    height: 42px;
-
+    width: 58px;
+    height: 41px;
     border: none;
-    border-radius: 10px;
-
-    background: #0a6dff;
+    border-radius: 11px;
+    background: linear-gradient(180deg, #07aee6 0%, #0c3ba5 100%);
 
     display: flex;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -2942,36 +2932,29 @@ body {
 }
 
 .dictionary-all-search-btn img {
-    width: 18px;
-    height: 18px;
+    width: 31px;
+    height: 31px;
 }
 
 /* LETTERS */
-
 .dictionary-all-letters {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
-
+    gap: 5px;
     margin-bottom: 24px;
 }
 
 .dictionary-all-letters button {
-    width: 28px;
-    height: 28px;
-
+    width: 30px;
+    height: 39px;
     border: none;
-    border-radius: 6px;
-
-    background: rgba(255, 255, 255, 0.12);
-
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.15);
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-
+    font-size: 16px;
+    font-weight: 700;
     color: #ffffff;
-
     cursor: pointer;
     transition: 0.25s ease;
 }
@@ -2982,25 +2965,19 @@ body {
 }
 
 /* SHOW BTN */
-
 .dictionary-all-show-btn {
     display: block;
     margin: 0 auto;
-
-    width: 132px;
-    height: 34px;
-
+    width: 131px;
+    height: 39px;
     border: none;
-    border-radius: 10px;
-
-    background: #0a6dff;
-
+    border-radius: 8px;
+    background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-
+    font-size: 16px;
+    font-weight: 400;
     color: #ffffff;
-
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -3010,19 +2987,17 @@ body {
 }
 
 /* BIG CARD */
-
 .dictionary-all-card {
     width: 100%;
-
     padding: 26px 34px 34px;
-
-    border-radius: 20px;
-
-    background: rgba(16, 96, 206, 0.15);
-
-    box-shadow: 0 4px 26px rgba(7, 174, 230, 0.5);
-
-    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    background: rgba(16, 96, 206, 0.12);
+    border: 1px solid rgba(48, 203, 255, 0.18);
+    box-shadow:
+        0 4px 26px rgba(7, 174, 230, 0.28),
+        inset 0 0 12px rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    margin-bottom: 59px;
 }
 
 /* TITLE */
@@ -3031,43 +3006,38 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 18px;
-
-    margin-bottom: 42px;
+    gap: 27px;
+    margin-bottom: 67px;
 }
 
 .dictionary-all-card-title span {
-    width: 115px;
+    width: 203px;
     height: 1px;
-    background: rgba(255, 255, 255, 0.6);
+    background: #ffffff;
 }
 
 .dictionary-all-card-title h2 {
     font-family: "FiraGO", sans-serif;
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 500;
     color: #ffffff;
 }
 
 /* GRID */
-
 .dictionary-all-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 90px;
-    row-gap: 22px;
+    column-gap: 30px;
+    row-gap: 24px;
 }
 
 /* ITEM */
-
 .dictionary-all-item {
     font-family: "FiraGO", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
-
-    color: #ffffff;
-
+    color: #eff1f2;
     transition: 0.25s ease;
     cursor: pointer;
 }
