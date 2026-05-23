@@ -3536,6 +3536,235 @@ body {
 .analyze-more-btn:hover {
     background: #dcecff;
 }
+/* =========================
+   ANALYZE INNER
+========================= */
+
+.analyze-inner-section {
+    padding-bottom: 55px;
+}
+
+/* TOP CARD */
+.analyze-inner-card {
+    padding: 18px 26px 20px;
+    border-radius: 16px;
+    background: #e3ebf5;
+    margin-bottom: 40px;
+}
+
+/* TITLE */
+
+.analyze-inner-title {
+    margin-bottom: 28px;
+
+    text-align: center;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    color: #3b63ad;
+}
+
+/* INFO */
+
+.analyze-inner-info {
+    margin-bottom: 22px;
+}
+
+.analyze-inner-info-row {
+    min-height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    border-bottom: 1px solid #ffffff;
+}
+
+.analyze-inner-info-row img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+}
+
+.analyze-inner-info-row span {
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    color: #303030;
+}
+
+/* FILE */
+
+.analyze-inner-file {
+    margin-bottom: 20px;
+}
+
+.analyze-inner-file-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.analyze-inner-file-left img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.analyze-inner-file-left p {
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+
+    color: #303030;
+}
+
+.analyze-inner-file-left a {
+    color: #3b63ad;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+/* DOWNLOAD */
+
+.analyze-inner-download-btn {
+    display: block;
+
+    width: 92px;
+    height: 32px;
+
+    margin: 0 auto 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.analyze-inner-download-btn:hover {
+    opacity: 0.9;
+}
+
+/* ACTIONS */
+
+.analyze-inner-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+}
+
+.analyze-inner-action-btn {
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.analyze-inner-action-btn img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* SMALL CARDS */
+
+.analyze-inner-small-card {
+    min-height: 48px;
+
+    padding: 14px 20px;
+
+    border-radius: 12px;
+
+    background: #edf3fb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+
+    margin-bottom: 20px;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+    color: #3b63ad;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.analyze-inner-small-card:hover {
+    background: #dcecff;
+
+    transform: translateY(-2px);
+}
+
+.analyze-inner-small-card--long {
+    min-height: 68px;
+}
+
+/* MORE */
+
+.analyze-inner-more-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 37px;
+}
+
+.analyze-inner-more-wrap span {
+    width: 413px;
+    height: 1px;
+
+    background: #cce9f9;
+}
+
+.analyze-inner-more-btn {
+    width: 303px;
+    height: 48px;
+
+    border: none;
+    border-radius: 16px;
+
+    background: #4078be26;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #000000;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.analyze-inner-more-btn:hover {
+    background: #dcecff;
+}
 /*ძირითადი გვერდის რესფონსივე*/
 /* =========================================
    RESPONSIVE
