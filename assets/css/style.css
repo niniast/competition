@@ -3555,52 +3555,45 @@ body {
 /* TITLE */
 
 .analyze-inner-title {
-    margin-bottom: 28px;
-
+    margin-bottom: 8px;
     text-align: center;
-
     font-family: "FiraGO", sans-serif;
     font-size: 18px;
     font-weight: 600;
-
-    color: #3b63ad;
+    color: #224596;
 }
 
 /* INFO */
 
 .analyze-inner-info {
-    margin-bottom: 22px;
+    margin-bottom: 8px;
 }
 
 .analyze-inner-info-row {
     min-height: 42px;
-
     display: flex;
     align-items: center;
-
-    gap: 10px;
-
-    border-bottom: 1px solid #ffffff;
+    gap: 8px;
+    border-bottom: 2px solid #ffffff;
 }
 
 .analyze-inner-info-row img {
-    width: 12px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }
 
 .analyze-inner-info-row span {
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-
-    color: #303030;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2a37;
 }
 
 /* FILE */
 
 .analyze-inner-file {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .analyze-inner-file-left {
@@ -3610,49 +3603,43 @@ body {
 }
 
 .analyze-inner-file-left img {
-    width: 18px;
-    height: 18px;
+    width: 28px;
+    height: 2cap;
     object-fit: contain;
 }
 
 .analyze-inner-file-left p {
     font-family: "FiraGO", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
-
-    color: #303030;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1f2a37;
 }
 
 .analyze-inner-file-left a {
-    color: #3b63ad;
+    color: #1f2a37;
     text-decoration: none;
     word-break: break-all;
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* DOWNLOAD */
 
 .analyze-inner-download-btn {
     display: block;
-
-    width: 92px;
-    height: 32px;
-
-    margin: 0 auto 18px;
-
+    width: 137px;
+    height: 40px;
+    margin: 0 auto 8px;
     border: none;
-    border-radius: 10px;
-
-    background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
-
+    border-radius: 11px;
+    background: linear-gradient(97deg, #0c3ba5 0%, #07aee6 100%);
     font-family: "FiraGO", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-
+    font-size: 16px;
+    font-weight: 400;
     color: #ffffff;
-
     cursor: pointer;
-
     transition: 0.3s ease;
 }
 
@@ -3666,20 +3653,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    gap: 18px;
+    gap: 25px;
 }
 
 .analyze-inner-action-btn {
     border: none;
     background: transparent;
-
     cursor: pointer;
 }
 
 .analyze-inner-action-btn img {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }
 
@@ -3687,29 +3672,20 @@ body {
 
 .analyze-inner-small-card {
     min-height: 48px;
-
     padding: 14px 20px;
-
-    border-radius: 12px;
-
-    background: #edf3fb;
-
+    border-radius: 14px;
+    background: #e3ebf5;
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-align: center;
     text-decoration: none;
-
-    margin-bottom: 20px;
-
+    margin-bottom: 40px;
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 20px;
-
-    color: #3b63ad;
-
+    line-height: 24px;
+    color: #224596;
     transition:
         transform 0.25s ease,
         background 0.25s ease;
@@ -3717,7 +3693,6 @@ body {
 
 .analyze-inner-small-card:hover {
     background: #dcecff;
-
     transform: translateY(-2px);
 }
 
@@ -3731,34 +3706,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 37px;
 }
 
 .analyze-inner-more-wrap span {
-    width: 413px;
+    width: 418px;
     height: 1px;
-
     background: #cce9f9;
 }
 
 .analyze-inner-more-btn {
     width: 303px;
     height: 48px;
-
     border: none;
     border-radius: 16px;
-
     background: #4078be26;
-
+    box-shadow: 0 2px 9px rgba(34, 60, 110, 0.1);
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
-
     color: #000000;
-
     cursor: pointer;
-
     transition: 0.3s ease;
 }
 
