@@ -3879,8 +3879,10 @@ body {
 .educational-resources-search-btn:hover {
     opacity: 0.9;
 }
+/* =========================
+   CARDS
+========================= */
 
-/* CARDS */
 .educational-resources-card {
     width: 1198px;
     padding: 8px 32px;
@@ -3897,10 +3899,15 @@ body {
     min-height: 140px;
 }
 
+/* =========================
+   CARD TOP
+========================= */
+
 .educational-resources-card-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     margin-bottom: 8px;
 }
 
@@ -3908,64 +3915,85 @@ body {
     font-family: "FiraGO", sans-serif;
     font-size: 18px;
     font-weight: 600;
+
     color: #224596;
 }
+
+/* DATE */
 
 .educational-resources-card-date {
     display: flex;
     align-items: center;
     gap: 10px;
+
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
+
     color: #1f2a37;
 }
 
 .educational-resources-card-date img {
     width: 24px;
     height: 24px;
+
     object-fit: contain;
 }
+
+/* =========================
+   CONTENT
+========================= */
 
 .educational-resources-card-content {
     width: 1134px;
     min-height: 336px;
+
     padding: 24px;
+
     border-radius: 16px;
+
     background: #ffffff;
+
     margin-bottom: 8px;
 }
 
 .educational-resources-card-content p {
     margin-bottom: 18px;
+
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 100%;
+
     color: #000000;
 }
 
-.educational-resources-card-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/* =========================
+   COMMON BOTTOM
+========================= */
 
 .educational-resources-card-author {
     display: flex;
     align-items: center;
     gap: 10px;
+
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
+
     color: #1f2a37;
 }
+
 .educational-resources-card-author img {
     width: 28px;
     height: 28px;
+
     object-fit: contain;
+
     opacity: 0.8;
 }
+
+/* ACTIONS */
 
 .educational-resources-card-actions {
     display: flex;
@@ -3982,22 +4010,74 @@ body {
 .educational-resources-card-actions img {
     width: 24px;
     height: 24px;
+
     object-fit: contain;
 }
+
+/* BUTTON */
 
 .educational-resources-download-btn {
     width: 137px;
     height: 40px;
+
     border: none;
     border-radius: 11px;
+
     background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
+
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
+
     color: #ffffff;
+
     cursor: pointer;
 }
 
+/* =========================
+   BIG CARD BOTTOM
+========================= */
+
+.educational-resources-card-bottom--big {
+    display: flex;
+    align-items: center;
+}
+
+.educational-resources-card-bottom--big .educational-resources-card-author {
+    margin-right: auto;
+}
+
+.educational-resources-card-bottom--big .educational-resources-card-actions {
+    margin-right: 36px;
+}
+
+/* =========================
+   SMALL CARD BOTTOM
+========================= */
+
+.educational-resources-card-bottom--small {
+    display: flex;
+    align-items: center;
+}
+.educational-resources-card-small-right {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.educational-resources-card-bottom--small .educational-resources-card-author {
+    margin-right: auto;
+}
+
+.educational-resources-card-bottom--small .educational-resources-download-btn {
+    margin-right: auto;
+}
+
+.educational-resources-card-bottom--small .educational-resources-card-actions {
+    gap: 18px;
+}
 /* VIDEOS */
 
 .educational-resources-videos {
