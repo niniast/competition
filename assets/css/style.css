@@ -3733,6 +3733,10 @@ body {
 .analyze-inner-more-btn:hover {
     background: #dcecff;
 }
+
+/* =========================
+   EDUCATIONAL-RESOURCES PAGE
+========================= */
 .educational-resources-section {
     padding: 48px 0 80px;
     background: #ffffff;
@@ -3742,102 +3746,147 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
-
+.educational-recources-text {
+    margin-bottom: 24px;
+    text-align: center;
+    font-family: "FiraGO", sans-serif;
+    font-style: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    color: #30cbff;
+}
 /* TOP */
 
 .educational-resources-top {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 }
 
 .educational-resources-tabs {
     display: flex;
-    gap: 24px;
-    margin-bottom: 24px;
+    gap: 47px;
+    margin-bottom: 22px;
 }
 
 .educational-resources-tab {
     width: 577px;
-    height: 48px;
-
-    border: 1px solid #2d7ed8;
-    border-radius: 12px;
-
-    background: #0d47a1;
-
+    height: 60px;
+    border: 1px solid #69aeff;
+    border-radius: 16px;
+    background: #0a4697;
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
-    font-weight: 500;
-
+    font-weight: 600;
     color: #ffffff;
-
     cursor: pointer;
 }
 
 .educational-resources-tab.active {
-    background: #1565c0;
+    background: #deeafa;
+    height: 70px;
+    color: #0a4697;
 }
-
 .educational-resources-filters {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 47px;
 }
 
-.educational-resources-select-wrap,
+/* SELECT*/
+
+.educational-resources-select-wrap {
+    position: relative;
+    width: 576px;
+}
+
+.educational-resources-select {
+    width: 100%;
+    height: 42px;
+    padding: 0 40px 0 16px;
+    border: 1px solid #cbd2e2;
+    border-radius: 8px;
+    background: #ffffff;
+    appearance: none;
+    outline: none;
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #47536e;
+    cursor: pointer;
+}
+.educational-resources-select-wrap::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #47536e;
+    border-bottom: 2px solid #47536e;
+    transform: translateY(-60%) rotate(45deg);
+    pointer-events: none;
+}
+/* SEARCH */
+
 .educational-resources-search-wrap {
-    width: 577px;
+    position: relative;
+    width: 576px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
 }
 
-.educational-resources-select,
+.educational-resources-search-wrap img {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    pointer-events: none;
+}
+
 .educational-resources-search-input {
     width: 100%;
     height: 42px;
-
-    border: 1px solid #cbd5e1;
+    padding: 0 16px 0 40px;
+    border: 1px solid #cbd2e2;
     border-radius: 8px;
-
-    padding: 0 16px;
-
+    background: #ffffff;
     outline: none;
-
     font-family: "FiraGO", sans-serif;
-}
-
-.educational-resources-search-wrap {
-    display: flex;
-    gap: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #47536e;
 }
 
 .educational-resources-search-btn {
+    flex-shrink: 0;
     width: 83px;
-    height: 42px;
-
+    height: 40px;
     border: none;
     border-radius: 11px;
-
     background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
-
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-
+    font-size: 16px;
+    font-weight: 400;
     color: #ffffff;
-
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.educational-resources-search-btn:hover {
+    opacity: 0.9;
 }
 
 /* CARDS */
-
 .educational-resources-card {
     width: 1198px;
-
     padding: 8px 32px;
-
     border-radius: 16px;
-
     background: #e3ebf5;
-
-    margin-bottom: 16px;
+    margin-bottom: 46px;
 }
 
 .educational-resources-card--big {
@@ -3852,48 +3901,48 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin-bottom: 18px;
+    margin-bottom: 8px;
 }
 
 .educational-resources-card-title {
     font-family: "FiraGO", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-
-    color: #234a84;
+    font-size: 18px;
+    font-weight: 600;
+    color: #224596;
 }
 
 .educational-resources-card-date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: "FiraGO", sans-serif;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1f2a37;
+}
 
-    color: #7d8ca5;
+.educational-resources-card-date img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .educational-resources-card-content {
-    width: 1080px;
-
-    min-height: 280px;
-
+    width: 1134px;
+    min-height: 336px;
     padding: 24px;
-
-    border-radius: 12px;
-
+    border-radius: 16px;
     background: #ffffff;
-
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .educational-resources-card-content p {
     margin-bottom: 18px;
-
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    line-height: 180%;
-
-    color: #4b5563;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #000000;
 }
 
 .educational-resources-card-bottom {
@@ -3903,39 +3952,49 @@ body {
 }
 
 .educational-resources-card-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: "FiraGO", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-
-    color: #7d8ca5;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1f2a37;
+}
+.educational-resources-card-author img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    opacity: 0.8;
 }
 
 .educational-resources-card-actions {
     display: flex;
-    gap: 14px;
+    align-items: center;
+    gap: 25px;
 }
 
-.educational-resources-card-actions button {
-    border: none;
-    background: transparent;
-    cursor: pointer;
+.educational-resources-card-actions a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.educational-resources-card-actions img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .educational-resources-download-btn {
     width: 137px;
     height: 40px;
-
     border: none;
     border-radius: 11px;
-
     background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
-
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-
+    font-size: 16px;
+    font-weight: 400;
     color: #ffffff;
-
     cursor: pointer;
 }
 
