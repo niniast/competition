@@ -3733,6 +3733,388 @@ body {
 .analyze-inner-more-btn:hover {
     background: #dcecff;
 }
+.educational-resources-section {
+    padding: 48px 0 80px;
+    background: #ffffff;
+}
+
+.educational-resources-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* TOP */
+
+.educational-resources-top {
+    margin-bottom: 24px;
+}
+
+.educational-resources-tabs {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.educational-resources-tab {
+    width: 577px;
+    height: 48px;
+
+    border: 1px solid #2d7ed8;
+    border-radius: 12px;
+
+    background: #0d47a1;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+.educational-resources-tab.active {
+    background: #1565c0;
+}
+
+.educational-resources-filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.educational-resources-select-wrap,
+.educational-resources-search-wrap {
+    width: 577px;
+}
+
+.educational-resources-select,
+.educational-resources-search-input {
+    width: 100%;
+    height: 42px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+
+    padding: 0 16px;
+
+    outline: none;
+
+    font-family: "FiraGO", sans-serif;
+}
+
+.educational-resources-search-wrap {
+    display: flex;
+    gap: 12px;
+}
+
+.educational-resources-search-btn {
+    width: 83px;
+    height: 42px;
+
+    border: none;
+    border-radius: 11px;
+
+    background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+/* CARDS */
+
+.educational-resources-card {
+    width: 1198px;
+
+    padding: 8px 32px;
+
+    border-radius: 16px;
+
+    background: #e3ebf5;
+
+    margin-bottom: 16px;
+}
+
+.educational-resources-card--big {
+    min-height: 499px;
+}
+
+.educational-resources-card--small {
+    min-height: 140px;
+}
+
+.educational-resources-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.educational-resources-card-title {
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #234a84;
+}
+
+.educational-resources-card-date {
+    font-family: "FiraGO", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #7d8ca5;
+}
+
+.educational-resources-card-content {
+    width: 1080px;
+
+    min-height: 280px;
+
+    padding: 24px;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    margin-bottom: 16px;
+}
+
+.educational-resources-card-content p {
+    margin-bottom: 18px;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    line-height: 180%;
+
+    color: #4b5563;
+}
+
+.educational-resources-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.educational-resources-card-author {
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #7d8ca5;
+}
+
+.educational-resources-card-actions {
+    display: flex;
+    gap: 14px;
+}
+
+.educational-resources-card-actions button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.educational-resources-download-btn {
+    width: 137px;
+    height: 40px;
+
+    border: none;
+    border-radius: 11px;
+
+    background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+/* VIDEOS */
+
+.educational-resources-videos {
+    width: 1440px;
+
+    margin: 40px auto 0;
+
+    padding: 24px 0;
+
+    background: #e3ebf5;
+}
+
+.educational-resources-videos-title-wrap,
+.educational-resources-faq-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    margin-bottom: 40px;
+}
+
+.educational-resources-line {
+    width: 120px;
+    height: 1px;
+    background: #cbd5e1;
+}
+
+.educational-resources-videos-title,
+.educational-resources-faq-title {
+    font-family: "FiraGO", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    color: #2d3b55;
+}
+
+.educational-resources-video-grid {
+    width: 1200px;
+
+    margin: 0 auto 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.educational-resources-video-card {
+    position: relative;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    padding: 12px;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.educational-resources-video-image {
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin-bottom: 14px;
+}
+
+.educational-resources-video-play {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 0, 70, 0.9);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+}
+
+.educational-resources-video-date {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 12px;
+
+    color: #ffffff;
+}
+
+.educational-resources-video-title {
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+    line-height: 160%;
+
+    color: #2d3b55;
+}
+
+/* FAQ */
+
+.educational-resources-faq {
+    width: 1200px;
+
+    margin: 40px auto 0;
+
+    padding: 24px;
+
+    border-radius: 16px;
+
+    background: #e3ebf5;
+}
+
+.educational-resources-faq-list {
+    margin-bottom: 32px;
+}
+
+.educational-resources-faq-item {
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #d7e1ee;
+}
+
+.educational-resources-faq-item span {
+    font-family: "FiraGO", sans-serif;
+    font-size: 14px;
+
+    color: #2d3b55;
+}
+
+.educational-resources-faq-item button {
+    border: none;
+    background: transparent;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.educational-resources-more-btn {
+    display: block;
+
+    width: 303px;
+    height: 48px;
+
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 16px;
+
+    background: #dce6f2;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+
+    color: #10225d;
+
+    cursor: pointer;
+}
 /*ძირითადი გვერდის რესფონსივე*/
 /* =========================================
    RESPONSIVE
