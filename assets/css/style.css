@@ -4309,12 +4309,13 @@ body {
     font-weight: 600;
     color: #1f2a37;
 }
+
 /* =========================
-   ABOUT SECTION
+   ABOUT PAGE
 ========================= */
 
 .about-section {
-    padding: 60px 0 80px;
+    padding: 32px 0 69px;
 }
 
 .about-container {
@@ -4325,15 +4326,13 @@ body {
 /* TITLE */
 
 .about-title {
-    margin-bottom: 22px;
-
+    margin-bottom: 40px;
     font-family: "FiraGO", sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 100%;
     text-transform: uppercase;
     text-align: center;
-
     color: #30cbff;
 }
 
@@ -4341,27 +4340,19 @@ body {
 
 .about-card {
     width: 1098px;
-
-    padding: 24px;
-
+    padding: 25px;
     border-radius: 16px;
-
     background: #ffffff;
-
     border: 7px solid transparent;
-
     background-image:
         linear-gradient(#ffffff, #ffffff),
-        linear-gradient(180deg, #93aee4 0%, #e6eeff 100%);
-
+        linear-gradient(180deg, #b7cdf3 0%, #eef4ff 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-
     box-shadow:
-        0 6px 20px rgba(0, 0, 0, 0.08),
-        0 0 14px rgba(48, 203, 255, 0.15);
-
-    margin-bottom: 16px;
+        0 4px 14px rgba(34, 69, 150, 0.1),
+        0 0 10px rgba(48, 203, 255, 0.12);
+    margin-bottom: 40px;
 }
 
 /* SIZES */
@@ -4379,9 +4370,8 @@ body {
 .about-card-top {
     display: flex;
     align-items: center;
-    gap: 10px;
-
-    margin-bottom: 18px;
+    gap: 27px;
+    margin-bottom: 8px;
 }
 
 .about-card-top-right {
@@ -4391,23 +4381,52 @@ body {
 /* LINE */
 
 .about-card-line {
-    width: 4px;
-    height: 18px;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
 
-    border-radius: 10px;
-
+.about-card-line::before,
+.about-card-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 8px;
+    height: 31px;
     background: #ffb901;
+}
+
+.about-card-line::before {
+    left: 2px;
+    transform: rotate(18deg);
+}
+
+.about-card-line::after {
+    left: 15px;
+    transform: rotate(18deg);
 }
 
 /* TITLE */
 
 .about-card-title {
+    position: relative;
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 100%;
-
     color: #1d2f6f;
+}
+/* THIN LINE */
+
+.about-card-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 886px;
+    height: 1px;
+    background: #e3ebf5;
 }
 
 /* TEXT */
