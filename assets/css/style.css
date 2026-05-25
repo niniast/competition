@@ -3879,9 +3879,7 @@ body {
 .educational-resources-search-btn:hover {
     opacity: 0.9;
 }
-/* =========================
-   CARDS
-========================= */
+/*  CARDS  */
 
 .educational-resources-card {
     width: 1198px;
@@ -3899,98 +3897,120 @@ body {
     min-height: 140px;
 }
 
-/* =========================
-   CARD TOP
-========================= */
+/* CARD TOP  */
 
 .educational-resources-card-top {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
-
+    gap: 24px;
     margin-bottom: 8px;
 }
 
 .educational-resources-card-title {
+    max-width: 930px;
     font-family: "FiraGO", sans-serif;
     font-size: 18px;
     font-weight: 600;
-
+    line-height: 140%;
     color: #224596;
 }
 
 /* DATE */
 
 .educational-resources-card-date {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     gap: 10px;
-
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
-
+    line-height: 100%;
     color: #1f2a37;
 }
 
 .educational-resources-card-date img {
     width: 24px;
     height: 24px;
-
     object-fit: contain;
 }
 
-/* =========================
-   CONTENT
-========================= */
+/* CONTENT */
 
 .educational-resources-card-content {
-    width: 1134px;
+    width: 100%;
     min-height: 336px;
-
     padding: 24px;
-
     border-radius: 16px;
-
     background: #ffffff;
-
     margin-bottom: 8px;
 }
 
 .educational-resources-card-content p {
     margin-bottom: 18px;
-
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 100%;
-
+    line-height: 160%;
     color: #000000;
 }
 
-/* =========================
-   COMMON BOTTOM
-========================= */
+.educational-resources-card-content p:last-child {
+    margin-bottom: 0;
+}
+
+/*  COMMON BOTTOM */
+
+.educational-resources-card-bottom {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+/* AUTHOR */
 
 .educational-resources-card-author {
     display: flex;
     align-items: center;
     gap: 10px;
-
     font-family: "FiraGO", sans-serif;
     font-size: 16px;
     font-weight: 400;
-
+    line-height: 100%;
     color: #1f2a37;
 }
 
 .educational-resources-card-author img {
     width: 28px;
     height: 28px;
-
     object-fit: contain;
-
     opacity: 0.8;
+}
+
+/* BUTTON */
+
+.educational-resources-download-btn {
+    width: 137px;
+    height: 40px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #ffffff;
+    cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.educational-resources-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(12, 59, 165, 0.22);
 }
 
 /* ACTIONS */
@@ -4005,255 +4025,291 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.educational-resources-card-actions a:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
 }
 
 .educational-resources-card-actions img {
     width: 24px;
     height: 24px;
-
     object-fit: contain;
 }
 
-/* BUTTON */
-
-.educational-resources-download-btn {
-    width: 137px;
-    height: 40px;
-
-    border: none;
-    border-radius: 11px;
-
-    background: linear-gradient(90deg, #0c3ba5 0%, #07aee6 100%);
-
-    font-family: "FiraGO", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-
-    color: #ffffff;
-
-    cursor: pointer;
-}
-
-/* =========================
-   BIG CARD BOTTOM
-========================= */
+/* BIG CARD BOTTOM */
 
 .educational-resources-card-bottom--big {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.educational-resources-card-bottom--big .educational-resources-card-author {
-    margin-right: auto;
+.educational-resources-card-bottom--big .educational-resources-download-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.educational-resources-card-bottom--big .educational-resources-card-actions {
-    margin-right: 36px;
+.educational-resources-card-bottom--big
+    .educational-resources-download-btn:hover {
+    transform: translateX(-50%) translateY(-2px);
 }
-
-/* =========================
-   SMALL CARD BOTTOM
-========================= */
+/*  SMALL CARD BOTTOM */
 
 .educational-resources-card-bottom--small {
+    position: relative;
     display: flex;
     align-items: center;
-}
-.educational-resources-card-small-right {
-    margin-left: auto;
-
-    display: flex;
-    align-items: center;
-    gap: 32px;
+    min-height: 40px;
 }
 
+/* AUTHOR */
 .educational-resources-card-bottom--small .educational-resources-card-author {
     margin-right: auto;
 }
 
+/* BUTTON */
 .educational-resources-card-bottom--small .educational-resources-download-btn {
-    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
+.educational-resources-card-bottom--small
+    .educational-resources-download-btn:hover {
+    transform: translateX(-50%) translateY(-2px);
+}
+
+/* ACTIONS */
 .educational-resources-card-bottom--small .educational-resources-card-actions {
+    margin-left: auto;
     gap: 18px;
 }
 /* VIDEOS */
 
 .educational-resources-videos {
-    width: 1440px;
-
-    margin: 40px auto 0;
-
+    width: 100%;
+    margin: 80px 0 0;
     padding: 24px 0;
-
     background: #e3ebf5;
 }
 
-.educational-resources-videos-title-wrap,
-.educational-resources-faq-title-wrap {
+/* TITLE */
+
+.educational-resources-videos-title-wrap {
+    width: 590px;
+    margin: 0 auto 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
-
-    margin-bottom: 40px;
+    gap: 40px;
 }
 
 .educational-resources-line {
-    width: 120px;
+    flex: 1;
+    width: 203px;
     height: 1px;
-    background: #cbd5e1;
+    background: #ffffff;
 }
 
-.educational-resources-videos-title,
-.educational-resources-faq-title {
+.educational-resources-videos-title {
+    flex-shrink: 0;
+    font-family: "FiraGO", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #1f2a37;
+}
+
+/*  GRID */
+
+.educational-resources-video-grid {
+    width: 1238px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 386px);
+    column-gap: 40px;
+    row-gap: 21px;
+}
+
+/* CARD */
+
+.educational-resources-video-card {
+    width: 386px;
+    min-height: 297px;
+    padding: 16px 10px;
+    border-radius: 14px;
+    border: 1px solid #0091e21a;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.educational-resources-video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* TITLE */
+
+.educational-resources-video-title {
+    margin-bottom: 31px;
+    text-align: center;
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #000000;
+}
+
+/* DATE */
+.educational-resources-video-date {
+    position: absolute;
+    top: 12px;
+    right: 12px;
     font-family: "FiraGO", sans-serif;
     font-size: 18px;
     font-weight: 600;
-
-    color: #2d3b55;
+    line-height: 100%;
+    color: #ffffff;
+    z-index: 2;
 }
 
-.educational-resources-video-grid {
-    width: 1200px;
+/* VIDEO WRAP */
 
-    margin: 0 auto 40px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-
-.educational-resources-video-card {
+.educational-resources-video-wrap {
     position: relative;
-
-    background: #ffffff;
-
-    border-radius: 16px;
-
-    overflow: hidden;
-
-    padding: 12px;
-
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
-.educational-resources-video-image {
+/*  VIDEO */
+
+.educational-resources-video {
     width: 100%;
-    height: 180px;
-
+    height: 196px;
     object-fit: cover;
-
-    border-radius: 12px;
-
-    margin-bottom: 14px;
+    border-radius: 16px;
+    display: block;
+    background: #dfe7f3; /*დროებით იყოს სანამ დაემატება ვიდეო*/
 }
+
+/* PLAY BUTTON */
 
 .educational-resources-video-play {
     position: absolute;
-    top: 120px;
+    top: 50%;
     left: 50%;
-
-    transform: translateX(-50%);
-
-    width: 52px;
-    height: 52px;
-
-    border-radius: 50%;
-
-    background: rgba(255, 0, 70, 0.9);
-
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40x;
+    border: none;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    color: #ffffff;
+    cursor: pointer;
+    z-index: 2;
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
 }
 
-.educational-resources-video-date {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-
-    font-family: "FiraGO", sans-serif;
-    font-size: 12px;
-
-    color: #ffffff;
+.educational-resources-video-play:hover {
+    transform: translate(-50%, -50%) scale(1.08);
+    opacity: 0.9;
 }
 
-.educational-resources-video-title {
-    font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-    line-height: 160%;
+/* MORE BUTTON */
 
-    color: #2d3b55;
+.educational-resources-more-btn {
+    display: block;
+    width: 303px;
+    height: 48px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 16px;
+    background: #4078be26;
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.educational-resources-more-btn:hover {
+    transform: translateY(-2px);
+    background: #cfdbea;
 }
 
 /* FAQ */
 
 .educational-resources-faq {
     width: 1200px;
-
     margin: 40px auto 0;
-
-    padding: 24px;
-
+    padding: 16px 32px;
     border-radius: 16px;
-
     background: #e3ebf5;
 }
+.educational-resources-faq-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 16px;
+}
 
+.educational-resources-line {
+    width: 203px;
+    height: 1px;
+    background: #ffffff;
+}
+
+.educational-resources-faq-title {
+    font-family: "FiraGO", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #1f2a37;
+}
 .educational-resources-faq-list {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .educational-resources-faq-item {
-    height: 56px;
-
+    height: 52px;
+    border-bottom: 2px solid #ffffff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    border-bottom: 1px solid #d7e1ee;
+    gap: 6px;
+}
+.educational-resources-faq-item button {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .educational-resources-faq-item span {
     font-family: "FiraGO", sans-serif;
-    font-size: 14px;
-
-    color: #2d3b55;
-}
-
-.educational-resources-faq-item button {
-    border: none;
-    background: transparent;
-
-    font-size: 18px;
-
-    cursor: pointer;
-}
-
-.educational-resources-more-btn {
-    display: block;
-
-    width: 303px;
-    height: 48px;
-
-    margin: 0 auto;
-
-    border: none;
-    border-radius: 16px;
-
-    background: #dce6f2;
-
-    font-family: "FiraGO", sans-serif;
     font-size: 16px;
-
-    color: #10225d;
-
-    cursor: pointer;
+    font-weight: 600;
+    color: #1f2a37;
 }
+
 /*ძირითადი გვერდის რესფონსივე*/
 /* =========================================
    RESPONSIVE
