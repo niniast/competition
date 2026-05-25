@@ -4309,6 +4309,144 @@ body {
     font-weight: 600;
     color: #1f2a37;
 }
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    padding: 60px 0 80px;
+}
+
+.about-container {
+    width: 1098px;
+    margin: 0 auto;
+}
+
+/* TITLE */
+
+.about-title {
+    margin-bottom: 22px;
+
+    font-family: "FiraGO", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #30cbff;
+}
+
+/* CARD */
+
+.about-card {
+    width: 1098px;
+
+    padding: 24px;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    border: 7px solid transparent;
+
+    background-image:
+        linear-gradient(#ffffff, #ffffff),
+        linear-gradient(180deg, #93aee4 0%, #e6eeff 100%);
+
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.08),
+        0 0 14px rgba(48, 203, 255, 0.15);
+
+    margin-bottom: 16px;
+}
+
+/* SIZES */
+
+.about-card-small {
+    min-height: 166px;
+}
+
+.about-card-big {
+    min-height: 335px;
+}
+
+/* TOP */
+
+.about-card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.about-card-top-right {
+    justify-content: flex-end;
+}
+
+/* LINE */
+
+.about-card-line {
+    width: 4px;
+    height: 18px;
+
+    border-radius: 10px;
+
+    background: #ffb901;
+}
+
+/* TITLE */
+
+.about-card-title {
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+
+    color: #1d2f6f;
+}
+
+/* TEXT */
+
+.about-card-text {
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 170%;
+
+    color: #2d3553;
+}
+
+/* CONTENT */
+
+.about-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* LIST */
+
+.about-list {
+    padding-left: 18px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-list li {
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 170%;
+
+    color: #2d3553;
+}
 
 /*ძირითადი გვერდის რესფონსივე*/
 /* =========================================
