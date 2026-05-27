@@ -4471,7 +4471,11 @@ body {
 ========================= */
 
 .contact-section {
-    padding: 32px 0 80px;
+    padding: 32px 0 126px;
+    background-image: url("../images/contact-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .contact-container {
@@ -4482,28 +4486,24 @@ body {
 /* TITLE */
 
 .contact-title {
-    margin-bottom: 24px;
-
+    margin-bottom: 43px;
     font-family: "FiraGO", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 100%;
     text-transform: uppercase;
     text-align: center;
-
     color: #ffffff;
 }
 
 /* CONTENT */
-
 .contact-content {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
+    gap: 130px;
 }
 
 /* LEFT */
-
 .contact-left {
     width: 488px;
 }
@@ -4513,16 +4513,13 @@ body {
 .contact-info-card {
     display: flex;
     align-items: center;
-    gap: 12px;
-
+    gap: 10px;
     width: 100%;
     border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-
+    border: 1px solid #ffffff;
     background: #ffffff;
-
     padding: 6px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .contact-info-card-small {
@@ -4530,66 +4527,88 @@ body {
 }
 
 .contact-info-card-big {
-    min-height: 64px;
-    align-items: flex-start;
+    margin-bottom: 0;
+    border-radius: 14px 14px 0 0;
 }
 
 /* ICON */
 
 .contact-info-icon {
-    width: 36px;
-    height: 36px;
-
-    border-radius: 10px;
-
+    width: 26px;
+    height: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-shrink: 0;
 }
 
 .contact-info-icon img {
-    width: 18px;
-    height: 18px;
+    width: 26px;
+    height: 26px;
     object-fit: contain;
 }
 
-/* TEXT */
+.contact-hotline-number {
+    width: 142px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/contact-1520.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "DM Giorgi", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 2px;
+    color: #173b67;
+    text-decoration: none;
+}
 
+/* TEXT */
 .contact-info-label {
     font-family: "FiraGO", sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
-
-    color: #1f3565;
+    color: #1f2a37;
 }
 
 .contact-info-link,
 .contact-info-text {
     font-family: "FiraGO", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 150%;
-
-    color: #1f3565;
-
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #1f2a37;
     text-decoration: none;
+}
+/* MAP WRAPPER */
+
+.contact-location-wrapper {
+    width: 488px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    background: transparent;
+    overflow: hidden;
+}
+
+/* ADDRESS CARD */
+
+.contact-info-card-big {
+    margin-bottom: 17px;
 }
 
 /* MAP */
 
 .contact-map-card {
-    width: 488px;
-    height: 312px;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
-
+    width: 428px;
+    height: 184px;
+    margin: 17px auto 25px;
     overflow: hidden;
-
     border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-map-card img {
@@ -4597,53 +4616,59 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
 /* SOCIAL */
 
 .contact-socials {
     width: 485px;
     height: 48px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: 0 14px;
-
+    padding: 0 21px;
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid #ffffff;
 }
 
 .contact-socials-title {
     font-family: "FiraGO", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-
+    font-size: 16px;
+    font-weight: 600;
     color: #ffffff;
 }
 
 .contact-social-icons {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 26px;
 }
 
 /* FORM CARD */
 
 .contact-form-card {
+    position: relative;
     width: 582px;
     min-height: 520px;
-
-    padding: 16px;
-
+    padding: 24px;
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-
-    background: rgba(255, 255, 255, 0.08);
-
+    background: transparent;
     backdrop-filter: blur(10px);
+    overflow: hidden;
 }
 
+.contact-form-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 4px;
+    background: linear-gradient(180deg, #93aee4 0%, #c4d4f3 45%, #e1ebff 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
 /* FORM TOP */
 
 .contact-form-top {
