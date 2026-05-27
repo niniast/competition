@@ -67,82 +67,129 @@
                 <a href="#">კონტაქტი</a>
             </nav>
         </header>
-        <section class="about-section">
-            <div class="about-container">
-                <h2 class="about-title">ჩვენ შესახებ</h2>
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2 class="contact-title">კონტაქტი</h2>
 
-                <!-- CARD 1 -->
-                <div class="about-card about-card-small">
-                    <div class="about-card-top">
-                        <div class="about-card-line"></div>
-                        <h3 class="about-card-title">მისია</h3>
+                <div class="contact-content">
+                    <!-- LEFT SIDE -->
+                    <div class="contact-left">
+                        <!-- PHONE -->
+                        <div class="contact-info-card contact-info-card-small">
+                            <div class="contact-info-icon">
+                                <img
+                                    src="assets/images/contact-call.png"
+                                    alt="phone"
+                                />
+                            </div>
+
+                            <span class="contact-info-label">ცხელი ხაზი:</span>
+
+                            <a href="tel:1520" class="contact-info-link">
+                                15 20
+                            </a>
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="contact-info-card contact-info-card-small">
+                            <div class="contact-info-icon">
+                                <img
+                                    src="assets/images/contact-mail.png"
+                                    alt="mail"
+                                />
+                            </div>
+
+                            <span class="contact-info-label">ელ. ფოსტა:</span>
+
+                            <a
+                                href="mailto:info@gcca.gov.ge"
+                                class="contact-info-link"
+                            >
+                                info@gcca.gov.ge
+                            </a>
+                        </div>
+
+                        <!-- ADDRESS -->
+                        <div class="contact-info-card contact-info-card-big">
+                            <div class="contact-info-icon">
+                                <img
+                                    src="assets/images/contact-location.png"
+                                    alt="location"
+                                />
+                            </div>
+
+                            <span class="contact-info-label"> მისამართი: </span>
+
+                            <p class="contact-info-text">
+                                0102 ქ. თბილისი, აღმაშენებლის გამზირი - 154,
+                                ბიზნეს ცენტრი “ბაქო პლაზა”
+                            </p>
+                        </div>
+
+                        <!-- MAP -->
+                        <div class="contact-map-card">
+                            <img
+                                src="assets/images/contact-map.png"
+                                alt="map"
+                            />
+                        </div>
+
+                        <!-- SOCIAL -->
+                        <div class="contact-socials">
+                            <span class="contact-socials-title">
+                                სოციალური ქსელები:
+                            </span>
+
+                            <div class="contact-social-icons">
+                                <a href="#">
+                                    <img
+                                        src="assets/images/in-header.png"
+                                        alt="linkedin"
+                                    />
+                                </a>
+
+                                <a href="#">
+                                    <img
+                                        src="assets/images/fb-header.png"
+                                        alt="facebook"
+                                    />
+                                </a>
+
+                                <a href="#">
+                                    <img
+                                        src="assets/images/play.png"
+                                        alt="youtube"
+                                    />
+                                </a>
+
+                                <a href="#">
+                                    <img src="assets/images/x.png" alt="x" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
-                    <p class="about-card-text">
-                        ჩვენი მისიაა შევქმნათ ხელმისაწვდომი, მაღალი ხარისხის
-                        საგანმანათლებლო და კვლევითი სივრცე, რომელიც დაეხმარება
-                        მომხმარებლებს საკუთარი უფლებების დაცვაში, ხოლო ბიზნესს -
-                        სამართლიანი კონკურენციის პრინციპების დანერგვაში. ჩვენ
-                        გვჯერა, რომ ცოდნა არის მთავარი ინსტრუმენტი ჯანსაღი
-                        ეკონომიკური გარემოს ჩამოსაყალიბებლად.
-                    </p>
-                </div>
+                    <!-- RIGHT SIDE -->
+                    <div class="contact-form-card">
+                        <div class="contact-form-top">
+                            <div class="contact-form-line"></div>
 
-                <!-- CARD 2 -->
-                <div class="about-card about-card-small">
-                    <div class="about-card-top about-card-top-right">
-                        <h3 class="about-card-title">ხედვა</h3>
-                        <div class="about-card-line"></div>
-                    </div>
+                            <h3 class="contact-form-title">მოგვწერეთ</h3>
 
-                    <p class="about-card-text">
-                        ჩვენი ხედვაა გავხდეთ მთავარი ორიენტირი და სანდოობის
-                        გარანტი კონკურენციისა და მომხმარებელთა დაცვის სფეროში.
-                        ვისწრაფვით ციფრული ეკოსისტემის შექმნისკენ, სადაც
-                        ნებისმიერი დაინტერესებული პირი, სკოლის მოსწავლიდან
-                        მსხვილ მეწარმემდე - მარტივად იპოვის საჭირო რესურსებს,
-                        პასუხებსა და მხარდაჭერას.
-                    </p>
-                </div>
+                            <div class="contact-form-divider"></div>
+                        </div>
 
-                <!-- CARD 3 -->
-                <div class="about-card about-card-big">
-                    <div class="about-card-top">
-                        <div class="about-card-line"></div>
-                        <h3 class="about-card-title">რას ვაკეთებთ</h3>
-                    </div>
+                        <form class="contact-form">
+                            <input type="text" placeholder="სახელი" />
 
-                    <div class="about-card-content">
-                        <p class="about-card-text">
-                            კონკურენციის და მომხმარებლის ჰაბი არის ერთიანი
-                            ციფრული სივრცე, რომელიც საქართველოში სამართლიანი
-                            საბაზრო გარემოსა და მომხმარებელთა უფლებების დაცვის
-                            კულტურის გაძლიერებას ემსახურება. ჩვენი პლატფორმა
-                            აერთიანებს სამ მთავარ მიმართულებას:
-                        </p>
+                            <input type="email" placeholder="ელ.ფოსტა" />
 
-                        <ul class="about-list">
-                            <li>
-                                ინტერაქციული ონლაინ-ლექსიკონი - რთული
-                                ტერმინოლოგია მარტივ ენაზე. დაგეხმარებათ
-                                კონკურენციისა და მომხმარებელთა დაცვის სამართლის
-                                უკეთ გაგებაში.
-                            </li>
+                            <input type="text" placeholder="თემა" />
 
-                            <li>
-                                სასწავლო და კვლევითი ბაზა - საერთაშორისო
-                                პრაქტიკის, დარგობრივი პუბლიკაციებისა და რეალური
-                                საქმეების ანალიზის (Case Studies) საცავი
-                                პროფესიონალებისა და მკვლევრებისთვის.
-                            </li>
+                            <textarea placeholder="კითხვა/კომენტარი"></textarea>
 
-                            <li>
-                                საგანმანათლებლო ჰაბი - პრაქტიკული გზამკვლევები,
-                                ვიდეო-მასალები და ტრენინგები, რომლებიც ბიზნესსა
-                                და ფიზიკურ პირებს უფლებებისა და ვალდებულებების
-                                გაცნობიერებაში ეხმარება.
-                            </li>
-                        </ul>
+                            <button type="submit">გაგზავნა</button>
+                        </form>
                     </div>
                 </div>
             </div>
