@@ -649,19 +649,14 @@ body {
     background: rgba(218, 234, 246, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow:
-        0 11px 16px rgba(34, 60, 110, 0.25),
-        inset 0 4px 7px rgba(253, 254, 255, 0.5);
+        0px 11px 16px rgba(34, 60, 110, 0.25),
+        inset 0px 4px 7px rgba(253, 254, 255, 0.5);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     color: #ffffff;
     font-family: "FiraGO", sans-serif;
     font-size: 18px;
     font-weight: 500;
-    cursor: pointer;
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease;
 }
 
 /*--- ARTICLES SECTION სიახლეები---*/
