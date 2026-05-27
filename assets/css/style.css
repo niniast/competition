@@ -20,14 +20,20 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "FiraGO-Medium";
+    src: url("../fonts/FiraGO-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 @font-face {
     font-family: "DM Giorgi";
-
     src: url("../fonts/dm-giorgi-khorguashvili.ttf") format("truetype");
-
     font-weight: 400;
     font-style: normal;
-
     font-display: swap;
 }
 
@@ -477,6 +483,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: #0091e233;
 }
 
 .card-text {
@@ -496,7 +503,7 @@ body {
 }
 
 .more {
-    font-family: "FiraGO", sans-serif;
+    font-family: "FiraGO-Bold", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
@@ -587,7 +594,7 @@ body {
 .user-options {
     max-width: 996px;
     width: 100%;
-    margin: 104px auto;
+    margin: 104px auto 28px;
     position: relative;
     z-index: 2;
 }
@@ -602,7 +609,7 @@ body {
     position: relative;
     width: fit-content;
     margin: 0 auto 52px;
-    font-family: "FiraGO", sans-serif;
+    font-family: "FiraGO-Medium", sans-serif;
     font-weight: 500;
     font-size: 18px;
     color: #ffffff;
@@ -675,7 +682,7 @@ body {
 }
 
 .articles-header h2 {
-    font-family: "FiraGO", sans-serif;
+    font-family: "FiraGO-Medium", sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: #1f2a37;
@@ -781,6 +788,7 @@ body {
     position: relative;
     padding: 48px 0;
     background: #dde9fa;
+    overflow: hidden;
 }
 
 .learn-header {
@@ -798,7 +806,7 @@ body {
 }
 
 .learn-title {
-    font-family: "FiraGO", sans-serif;
+    font-family: "FiraGO-Medium", sans-serif;
     font-weight: 500;
     font-size: 18px;
     color: #1f2a37;
@@ -891,43 +899,66 @@ body {
     border-radius: 50%;
 }
 
-/* დიდი მუქი ლურჯი */
+/* დიდი */
 
 .circle-lg {
+    position: absolute;
     width: 92px;
     height: 92px;
-    left: 462px;
-    top: 125px;
-    border-radius: 175px;
+    left: 530px;
+    top: 150px;
+    border-radius: 50%;
     opacity: 0.21;
-    background: linear-gradient(180deg, #4078be 0%, #4078be 67%);
-    box-shadow: inset 20px -8px 27px rgba(64, 120, 190, 0.5);
+    background: linear-gradient(
+        180deg,
+        rgba(64, 120, 190, 0.55) 0%,
+        rgba(64, 120, 190, 0.35) 100% transparent
+    );
+
+    box-shadow: inset 20px -8px 27px #4078be80;
+
+    backdrop-filter: blur(27px);
 }
 
-/* საშუალო ცისფერი */
+/* საშუალო */
 
 .circle-md {
+    position: absolute;
     width: 83px;
     height: 83px;
-    top: 229px;
-    left: 773px;
+    left: 820px;
+    top: 265px;
+    border-radius: 50%;
     opacity: 0.41;
-    background: linear-gradient(180deg, #00b8e1 0%, #45aec5 67%);
+
+    background: linear-gradient(
+        180deg,
+        rgba(0, 184, 225, 1) 0%,
+        rgba(69, 174, 197, 0.67) 100% transparent;
+    );
+
     box-shadow: inset 20px -8px 27px rgba(0, 155, 186, 0.5);
 }
 
-/* პატარა მუქი */
+/* პატარა */
 
 .circle-sm {
+    position: absolute;
     width: 42px;
     height: 42px;
-    right: 1137px;
+    left: 1136px;
     top: 168px;
+    border-radius: 50%;
     opacity: 0.21;
-    background: linear-gradient(180deg, #4078be 0%, #4078be 67%);
+
+    background: linear-gradient(
+        180deg,
+        rgba(64, 120, 190, 1) 0%,
+        rgba(64, 120, 190, 0.67) 100% transparent;
+    );
+
     box-shadow: inset 20px -8px 27px rgba(64, 120, 190, 0.5);
 }
-
 /* --- EVENT SECTION --- */
 .event-section {
     padding: 70px 0 85px;
@@ -949,7 +980,7 @@ body {
 }
 
 .event-title {
-    font-family: "FiraGO", sans-serif;
+    font-family: "FiraGO-Medium", sans-serif;
     font-weight: 500;
     font-size: 18px;
     color: #1f2a37;
@@ -1180,15 +1211,26 @@ body {
 .footer-quote {
     position: relative;
     z-index: 2;
+
     margin-top: 24px;
     margin-left: 150px;
-    font-family: "DM Giorgi Khorghuashvili", cursive;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    font-family: "DM Giorgi", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 130%;
-    background: linear-gradient(90deg, #07aee6, #ffffff);
+
+    line-height: 150%;
+
+    background: linear-gradient(90deg, #048fc4 0%, #ffffff 30%);
+
     -webkit-background-clip: text;
+    background-clip: text;
+
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 /* --- CONTACT --- */
