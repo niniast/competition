@@ -5050,6 +5050,7 @@ body {
         padding: 16px;
     }
 
+    /*left card*/
     .search {
         height: 41px;
         padding: 0 16px;
@@ -5086,49 +5087,77 @@ body {
         font-size: 14px;
         white-space: nowrap;
     }
-
+    /*right card*/
     .divider-line {
         width: 260px;
     }
 
+    .card-right::after {
+        width: 163px;
+    }
+
     .highlight {
-        width: 100%;
+        display: none;
     }
 
     .bottom-row {
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
-        gap: 10px;
-    }
-
-    .more {
-        white-space: nowrap;
-    }
-
-    .btn {
-        width: 120px;
-        flex-shrink: 0;
-
-        font-size: 14px;
+        gap: 8px;
     }
 
     .handwritten-text {
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
         width: 90%;
     }
+    /*ვინ ხარ*/
 
-    .question-title::before,
-    .question-title::after {
-        display: none;
+    .user-options {
+        margin-top: 20px;
+    }
+
+    .question-title {
+        position: relative;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+        padding: 0 8px;
     }
 
     .option {
-        width: 100%;
-        max-width: 320px;
+        width: calc(50% - 7px);
+        height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 16x;
+        font-weight: 500;
     }
 
+    .option img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    .option:last-child {
+        width: 184px;
+    }
+    /**/
     .article-card {
         width: 100%;
         max-width: 340px;
