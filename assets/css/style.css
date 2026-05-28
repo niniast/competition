@@ -5157,10 +5157,80 @@ body {
     .option:last-child {
         width: 184px;
     }
-    /**/
+    /*სიახლეები*/
+
+    .articles-section {
+        padding: 40px 0 !important;
+        overflow: hidden;
+    }
+
+    /* HEADER */
+
+    .articles-header {
+        padding: 0 23px;
+        margin-bottom: 20px;
+    }
+
+    /* CAROUSEL */
+
+    .articles-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 25px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        padding-left: 23px;
+        padding-right: 0;
+        padding-bottom: 14px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .articles-cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* CARD */
+
     .article-card {
+        flex: 0 0 calc(100vw - 90px);
+        min-width: calc(100vw - 90px);
+        max-width: calc(100vw - 90px);
+        scroll-snap-align: start;
+        text-decoration: none;
+    }
+
+    .article-card-inner {
         width: 100%;
-        max-width: 340px;
+        overflow: hidden;
+    }
+    /* IMAGE */
+
+    .article-image {
+        position: relative;
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+    }
+
+    /* DATE */
+
+    .article-date {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    /* CONTENT */
+    .article-content {
+        padding: 16px;
+    }
+
+    .view-all-btn {
+        margin-top: 24px;
     }
 
     .event-card {
