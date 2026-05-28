@@ -5205,7 +5205,6 @@ body {
         width: 100%;
         overflow: hidden;
     }
-    /* IMAGE */
 
     .article-image {
         position: relative;
@@ -5213,8 +5212,6 @@ body {
         height: 220px;
         overflow: hidden;
     }
-
-    /* DATE */
 
     .article-date {
         position: absolute;
@@ -5224,32 +5221,141 @@ body {
         font-weight: 500;
     }
 
-    /* CONTENT */
     .article-content {
         padding: 16px;
     }
 
     .view-all-btn {
-        margin-top: 24px;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        margin: 24px auto 0;
     }
 
-    .event-card {
-        width: 100%;
-        max-width: 360px;
+    /*რა ისწავლე*/
+
+    . .learn-section {
+        position: relative;
+
+        padding: 42px 23px 48px;
+
+        background: #dde9fa;
+
+        overflow: hidden;
     }
+
+    /* CIRCLES */
+
+    .circle-lg {
+        width: 64px;
+        height: 64px;
+
+        left: -12px;
+        top: 170px;
+
+        opacity: 0.14;
+    }
+
+    .circle-md {
+        width: 56px;
+        height: 56px;
+
+        right: -16px;
+        left: auto;
+
+        top: 310px;
+
+        opacity: 0.18;
+    }
+
+    .circle-sm {
+        width: 34px;
+        height: 34px;
+
+        right: 26px;
+        left: auto;
+
+        top: 145px;
+
+        opacity: 0.14;
+    }
+
+    /* HEADER */
+
+    .learn-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        margin-bottom: 66px;
+    }
+
+    .learn-line:first-child {
+        display: none;
+    }
+
+    .learn-line:last-child {
+        width: 100%;
+        max-width: 102px;
+    }
+
+    .learn-title {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* TEST ROW */
+
+    .learn-left {
+        position: static;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: -113px;
+    }
+
+    .learn-label {
+        font-size: 16x;
+        font-weight: 500;
+    }
+
+    .learn-bottom-line {
+        display: none;
+    }
+
+    /* QUESTION */
+
+    .learn-question {
+        max-width: 364px;
+
+        margin-bottom: 66px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 145%;
+        color: #000000;
+    }
+
+    /* OPTIONS */
 
     .learn-options {
+        width: 250px;
+        display: flex;
         flex-direction: column;
+        gap: 12px;
     }
 
     .learn-option {
         width: 100%;
-        max-width: 320px;
-    }
-
-    .learn-left {
-        position: static;
-        margin-bottom: 20px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 400;
     }
 
     .subscribe-btn {
