@@ -4971,7 +4971,6 @@ body {
 @media (max-width: 768px) {
     .header-top {
         position: relative;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -4980,8 +4979,30 @@ body {
         display: none;
     }
 
+    /* BURGER */
+
     .burger {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .burger span {
+        width: 22px;
+        height: 2px;
+        background: #ffffff;
     }
 
     .nav {
@@ -4989,7 +5010,6 @@ body {
         top: 140px;
         left: 20px;
         right: 20px;
-
         display: none;
 
         flex-direction: column;
@@ -5016,13 +5036,13 @@ body {
     }
 
     .main-title {
-        width: 280px;
-        margin: 39px auto 0;
-
+        width: 339px;
+        margin: 16px auto 0;
+        font-family: "FiraGO-Bold", sans-serif;
         font-size: 20px;
+        font-weight: 700;
         line-height: 140%;
         text-align: center;
-
         word-break: break-word;
     }
 
@@ -5031,19 +5051,44 @@ body {
     }
 
     .search {
-        height: 56px;
-        padding: 0 14px;
+        height: 41px;
+        padding: 0 16px;
+    }
+
+    .tags {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        width: 100%;
+        margin-top: 34px;
+    }
+
+    .tags-label {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        font-size: 14px;
     }
 
     .tags-list {
-        gap: 10px;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
     }
+
     .tags-list .tag:nth-child(3) {
         display: none;
     }
 
+    .tag {
+        padding: 4px 10px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
     .divider-line {
-        width: 100%;
+        width: 260px;
     }
 
     .highlight {
@@ -5054,7 +5099,6 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-
         width: 100%;
         gap: 10px;
     }
