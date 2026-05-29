@@ -1,20 +1,17 @@
-/*მობილურში ბურგერ მენიუ*/
 const burger = document.querySelector(".burger");
-const nav = document.querySelector(".nav");
+const menu = document.querySelector(".mobile-menu-overlay");
+const closeBtn = document.querySelector(".mobile-menu-close");
 
 burger.addEventListener("click", () => {
-    nav.classList.toggle("active");
+    menu.classList.add("active");
 });
 
-/*ფუტერი ჩამოსაშლელი*/
-const footerDropdowns = document.querySelectorAll(
-    ".footer-column:not(.footer-contact)",
-);
+closeBtn.addEventListener("click", () => {
+    menu.classList.remove("active");
+});
 
-footerDropdowns.forEach((item) => {
-    const heading = item.querySelector(".footer-heading");
-
-    heading.addEventListener("click", () => {
-        item.classList.toggle("active");
-    });
+menu.addEventListener("click", (e) => {
+    if (e.target === menu) {
+        menu.classList.remove("active");
+    }
 });
