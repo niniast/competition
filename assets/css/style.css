@@ -1233,9 +1233,9 @@ body {
     transition: 0.25s ease;
 }
 
-/*დაადარე ფიგმას.footer-links a:hover {
+.footer-links a:hover {
     color: #07aee6;
-}*/
+}
 
 .footer-modules {
     min-width: 212px;
@@ -1429,7 +1429,7 @@ body {
     margin-bottom: 31px;
     margin-top: 25px;
     text-align: center;
-    font-family: "FiraGO", sans-serif;
+    font-family: "FiraGO-Bold", sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -4944,37 +4944,91 @@ body {
 
 /* TABLET */
 @media (max-width: 1024px) {
-    .nav {
-        max-width: 95%;
-        padding: 10px 20px;
-        flex-wrap: wrap;
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    * {
+        outline: 1px solid red;
+    }
+    /* HEADER */
+    .header {
+        overflow: hidden;
+    }
+
+    .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-left {
+        width: auto;
         height: auto;
-        gap: 12px;
-    }
-
-    .main-title {
-        font-size: 24px;
-    }
-
-    .cards {
-        flex-direction: column;
+        display: flex;
         align-items: center;
     }
 
+    .logo {
+        width: 220px;
+        height: auto;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: flex !important;
+
+        margin-left: auto;
+
+        width: 40px;
+        height: 40px;
+
+        flex-shrink: 0;
+    }
+
+    .burger span {
+        width: 22px;
+        height: 2px;
+        background: #ffffff;
+    }
+
+    /* TITLE */
+
+    .main-title {
+        font-size: 26px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* TOP CARDS */
+
     .card-left,
     .card-right {
-        width: 100%;
-        max-width: 700px;
+        width: calc(50% - 10px);
     }
 
     .search {
         width: 100%;
     }
 
+    .card-text {
+        width: 100%;
+    }
+
+    .highlight {
+        width: 280px;
+    }
+
     .tags {
         flex-direction: column;
+        gap: 16px;
         align-items: flex-start;
-        gap: 18px;
     }
 
     .tags-list {
@@ -4982,44 +5036,113 @@ body {
         flex-wrap: wrap;
     }
 
-    .card-text {
-        width: 100%;
+    /* BLUE SECTION */
+
+    .question-title::before,
+    .question-title::after {
+        width: 120px;
     }
 
     .options {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 24px;
+        gap: 20px;
     }
+
+    .option {
+        width: 220px;
+    }
+
+    /* ARTICLES */
 
     .articles-section {
         padding: 40px 24px;
     }
 
+    /* ARTICLES */
+
+    .articles-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(260px, 281px));
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .view-all-btn {
+        margin: 28px auto 0;
+    }
+
+    /* LEARN */
+
+    .learn-content {
+        padding-inline: 24px;
+    }
+
+    .learn-left {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .learn-bottom-line {
+        display: none;
+    }
+
+    .learn-options {
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .learn-option {
+        width: calc(50% - 16px);
+        max-width: 320px;
+    }
+
+    /* CIRCLES */
+
+    .circle-lg,
+    .circle-md,
+    .circle-sm {
+        display: none;
+    }
+
+    /* EVENTS */
+
     .event-cards {
+        width: 100%;
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .event-card {
+        width: 320px;
+    }
+
+    .event-button {
+        margin: 40px auto 0;
+    }
+
+    /* FOOTER */
 
     .footer-container {
         flex-wrap: wrap;
         justify-content: center;
-        text-align: center;
+        gap: 50px;
     }
 
     .footer-center {
         margin-right: 0;
+        order: -1;
+        width: 100%;
     }
 
-    .footer-form button {
+    .footer-quote {
         margin-left: 0;
+        text-align: center;
     }
 
     .footer-line {
         width: 90%;
     }
 }
-
 /* MOBILE */
 @media (max-width: 768px) {
     .header-top {
@@ -5289,7 +5412,7 @@ body {
 
     /*რა ისწავლე*/
 
-    . .learn-section {
+    .learn-section {
         position: relative;
 
         padding: 42px 23px 48px;
