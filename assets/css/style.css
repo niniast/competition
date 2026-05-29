@@ -2022,7 +2022,7 @@ body {
     margin-top: 32px;
     margin-bottom: 32px;
     text-align: center;
-    font-family: "FiraGO", sans-serif;
+    font-family: "FiraGO-Bold", sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -2053,7 +2053,7 @@ body {
 .news-inner-title {
     max-width: 910px;
     text-align: center;
-    font-family: "FiraGO", sans-serif;
+    font-family: "FiraGO-Medium", sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 100%;
