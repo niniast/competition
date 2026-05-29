@@ -5010,9 +5010,7 @@ body {
         width: 100%;
         padding: 0 20px;
     }
-    * {
-        outline: 1px solid red;
-    }
+
     /* HEADER */
     .header {
         overflow: hidden;
@@ -5902,5 +5900,87 @@ body {
         text-align: center;
 
         font-size: 12px;
+    }
+}
+/*/////////////////EVENT PAGE RESPONSIVE/////////////////*/
+/* =========================
+   1024px
+========================= */
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    /* TABS */
+
+    .events-page-tabs {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .events-page-tab {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* FILTERS */
+
+    .events-page-filters {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .events-page-field1,
+    .events-page-field2 {
+        width: 100%;
+    }
+
+    /* GRID */
+
+    .events-grid {
+        width: 100%;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        justify-content: center;
+
+        gap: 24px;
+    }
+
+    .events-grid-card {
+        width: 100%;
+        height: 220px;
+    }
+
+    /* PAGINATION */
+
+    .events-pagination {
+        width: 100%;
+    }
+
+    .events-pagination-btn {
+        width: 240px;
+        flex-shrink: 0;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer-column {
+        width: 45%;
+    }
+
+    .footer-center {
+        width: 100%;
+        order: -1;
     }
 }
